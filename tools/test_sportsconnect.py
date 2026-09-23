@@ -51,13 +51,13 @@ class SportsConnectExportTests(unittest.TestCase):
     def test_public_url_updates_every_repeated_link(self):
         fragment, pending = export(self.configure('rules', enabled=True, sportsConnectUrl='https://example.org/rules.pdf?a=1&b=2'))
         self.assertNotIn('rules', pending)
-        self.assertEqual(fragment.count('href="https://example.org/rules.pdf?a=1&amp;b=2"'), 3)
+        self.assertEqual(fragment.count('href="https://example.org/rules.pdf?a=1&amp;b=2"'), 4)
         self.assertNotIn('Tournament Rules — coming soon', fragment)
 
     def test_public_standalone_url_is_used_when_override_is_empty(self):
         fragment, pending = export(self.configure('rules', url='https://example.org/rules.pdf', enabled=True, sportsConnectUrl=''))
         self.assertNotIn('rules', pending)
-        self.assertEqual(fragment.count('href="https://example.org/rules.pdf"'), 3)
+        self.assertEqual(fragment.count('href="https://example.org/rules.pdf"'), 4)
 
     def test_disabled_link_has_no_clickable_destination(self):
         fragment, _ = export(self.configure('teamRegistration', url='https://example.org/registration', enabled=False))

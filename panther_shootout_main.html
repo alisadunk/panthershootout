@@ -27,10 +27,10 @@ const LINKS = {
   },
   "teamRegistration": {
     "url": "https://forms.gle/Ybfbc7NrieDRfQ1W9",
-    "enabled": false
+    "enabled": true
   },
   "documentUpload": {
-    "url": "https://forms.gle/AyA9x7oZzfydLujf9",
+    "url": "https://forms.gle/xY1WDDPb99jjsJVUA",
     "enabled": true
   },
   "directorEmail": {
@@ -67,11 +67,7 @@ const LINKS = {
     "sportsConnectUrl": ""
   },
   "refereeRegistration": {
-    "url": "https://forms.gle/Yx5gQyfcaa2s53gH7",
-    "enabled": false
-  },
-  "refereeSchedule": {
-    "url": "https://cgisports.com/ref/6039/",
+    "url": "https://www.cgisports.com/ref/2130",
     "enabled": false
   },
   "refereePlan": {
@@ -110,7 +106,9 @@ body{
 h1{
   margin:0 0 16px;
   font-size:24px;
-  color:#ff6600;
+  color:#111;
+  padding-bottom:12px;
+  border-bottom:3px solid #ffbf24;
   text-align:center;
 }
 h2{
@@ -144,13 +142,13 @@ th,td{
   text-align:left;
 }
 th{
-  background:#ffe5cc;
+  background:#fff3d1;
   color:#000;
 }
 caption{
   caption-side:top;
   font-weight:700;
-  color:#ff6600;
+  color:#111;
   margin-bottom:6px;
 }
 .rule{
@@ -158,8 +156,9 @@ caption{
   margin:16px 0;
 }
 a{
-  color:#ff6600;
-  text-decoration:none;
+  color:#ffbf24;
+  font-weight:700;
+  text-decoration:underline;
 }
 a:hover{
   text-decoration:none;
@@ -192,11 +191,11 @@ a:hover{
   margin-top:24px;
 }
 .reg-emph{
-  color:#ff6600;
+  color:#ffbf24;
   font-weight:700;
 }
 .text-link{
-  text-decoration:none;
+  text-decoration:underline;
 }
 .info-text p:last-child{
   margin-bottom:0;
@@ -221,24 +220,25 @@ a:hover{
   outline-color:#111;
 }
 .btn-primary{
-  background:#ff6600;
+  background:#ffbf24;
   color:#000;
 }
 .btn-primary:hover{
-  background:#cc5200;
-  color:#fff;
-}
-.btn-ghost{
-  background:#ffe5cc;
+  background:#f0ad12;
   color:#000;
 }
+.btn-ghost{
+  background:#ffe3a1;
+  color:#000;
+  border:1px solid #e5bc62;
+}
 .btn-ghost:hover{
-  background:#ffd1a3;
+  background:#ffd477;
 }
 .btn-muted{
-  background:#b8a99a;
-  color:#ffffff;
-  border:1px solid #a89685;
+  background:#eee7d6;
+  color:#6b6250;
+  border:1px solid #d8ceba;
   opacity:0.9;
   cursor:default;
 }
@@ -266,7 +266,7 @@ summary::-webkit-details-marker{
 }
 .badge{
   margin-left:auto;
-  background:#ff6600;
+  background:#ffbf24;
   color:#000;
   padding:2px 10px;
   border-radius:999px;
@@ -285,7 +285,7 @@ details td{
   text-align:left;
 }
 details th{
-  background:#ffe5cc;
+  background:#fff3d1;
   font-weight:700;
 }
 
@@ -323,12 +323,12 @@ details th{
         10U, 12U, and 14U divisions to the
         <strong>28th Annual Panther Shootout</strong>.
         After each pool play game, teams participate in the
-        <strong style="color:#ff6600;">Shootout Competition</strong>.
+        <strong>Shootout Competition</strong>.
       </p>
 
       <p>
         The tournament is held over Thanksgiving weekend,
-        <strong style="color:#ff6600;">Friday &amp; Saturday, November 27–28, 2026</strong>.
+        <strong>Friday &amp; Saturday, November 27–28, 2026</strong>.
         All games are held at <a class="text-link" data-link="map" rel="noopener" target="_blank">Pepper Tree Playfields</a> in Newbury Park:
         3720 Old Conejo Rd, Thousand Oaks, CA 91320.
       </p>
@@ -377,8 +377,8 @@ details th{
     <div class="info-box info-text">
       <p>
         Registration for the 28th Annual Panther Shootout
-        opens on <strong style="color:#ff6600;">October 1, 2026</strong>.
-        The <strong style="color:#ff6600;">last day to register is November 20, 2026</strong>.
+        opens on <strong>October 1, 2026</strong>.
+        The <strong>last day to register is November 20, 2026</strong>.
         Team participation status will be displayed on this website.
       </p>
 
@@ -388,7 +388,7 @@ details th{
           Complete the <a class="reg-emph text-link"
                           data-link="teamRegistration"
                           rel="noopener"
-                          target="_blank">Team Registration Form</a> when registration opens on October 1, 2026.
+                          target="_blank">Team Registration Form</a>.
         </li>
         <li>
           Complete and Submit the <a class="reg-emph text-link" data-link="application" rel="noopener" target="_blank">Application Form</a>
@@ -431,7 +431,7 @@ details th{
       <a class="btn btn-primary"
          data-link="teamRegistration"
          rel="noopener"
-         target="_blank">Team Registration Form — Opens October 1, 2026</a>
+         target="_blank">Team Registration Form</a>
 
       <a class="btn btn-ghost"
          data-link="documentUpload"
@@ -530,12 +530,12 @@ details th{
     <div class="info-box info-text">
       <p>
         Please arrive for check-in about an hour before your first match.
-        Bring <strong style="color:#ff6600;">exactly five completed <a class="text-link" data-link="gameCard" rel="noopener" target="_blank">Game Cards</a></strong>
+        Bring <strong>exactly five completed <a class="text-link" data-link="gameCard" rel="noopener" target="_blank">Game Cards</a></strong>
         printed on card stock using the tournament's fillable PDF template, along with your
-        <strong style="color:#ff6600;">Roster and Player Release Forms</strong>.
+        <strong>Roster and Player Release Forms</strong>.
       </p>
       <p>
-        Every player takes part in the <strong style="color:#ff6600;">Shootout Competition</strong>:
+        Every player takes part in the <strong>Shootout Competition</strong>:
         five kickers and one goalkeeper for each of the three shootouts after pool play games.
         One of the game cards is used to track participation. Refer to the <a class="text-link" data-link="rules" rel="noopener" target="_blank">Tournament Rules</a> for full details.
       </p>
@@ -545,7 +545,7 @@ details th{
       <a class="btn btn-muted"
          data-link="schedule"
          rel="noopener"
-         target="_blank">Schedule 2025</a>
+         target="_blank">Game Schedule</a>
 
       <a class="btn btn-ghost"
          data-link="documentUpload"
@@ -565,16 +565,21 @@ details th{
 </div>
 
 <!-- ========== FOR REFEREES ========== -->
-<div class="info-section" id="for-referees" style="display:none;">
+<div class="info-section" id="for-referees">
   <h2>For Referees</h2>
   <div class="info-grid">
 
     <div class="info-box info-text">
       <p>
-        In addition to coach's submission of the Referee Nomination Form, all referees must
-        <strong style="color:#ff944d;">register</strong> online.
-        A link to self-schedule will be emailed to each registered referee with additional instructions
-        during the week of the tournament.
+        In addition to the coach's submission of the Referee Nomination Form, all referees must
+        register online. Referee registration and game self-scheduling will use the same third-party website.
+      </p>
+
+      <p>
+        <strong>Referee registration opens November 21, 2026.</strong>
+        Registration opens after team registration closes so all participating teams can be listed
+        and referees can select the team they represent. The registration and scheduling link will
+        be available here when referee registration opens.
       </p>
 
       <p>
@@ -584,14 +589,14 @@ details th{
       </p>
 
       <p>
-        Youth referees may not also be rostered players. Any referee with a child in the tournament
+        Youth referees may <strong>NOT</strong> also be rostered players. Any referee with a child in the tournament
         must refrain from officiating their child’s match to maintain neutrality.
       </p>
 
       <p>
         Center Referees: If a spectator, coach, or player becomes abusive or refuses to follow instructions,
-        you are empowered to <strong style="color:#ff6600;">stop the match immediately</strong> by picking up the ball
-        and directing the offending individual to <strong style="color:#ff6600;">leave the park</strong>.
+        you are empowered to <strong>stop the match</strong> immediately by picking up the ball
+        and directing the offending individual to leave the park.
         Do not restart the match until they comply. A Field Monitor will contact HQ so staff can assist.
       </p>
 
@@ -622,12 +627,7 @@ details th{
       <a class="btn btn-muted"
          data-link="refereeRegistration"
          rel="noopener"
-         target="_blank">Referee Registration</a>
-
-      <a class="btn btn-muted"
-         data-link="refereeSchedule"
-         rel="noopener"
-         target="_blank">Referee Self Schedule</a>
+         target="_blank">Referee Registration &amp; Scheduling — Opens November 21, 2026</a>
 
       <a class="btn btn-ghost"
          data-link="refereePlan"
@@ -650,14 +650,14 @@ details th{
 
     <div class="info-box info-text">
       <p>
-        Please come and <strong style="color:#ff944d;">volunteer</strong> for the Panther Shootout!
+        Please come and <strong>volunteer</strong> for the Panther Shootout!
         We need your help to make this event a success. Check in at Tournament HQ upon arrival
         to receive your volunteer T-shirt. Go Panthers!
       </p>
 
       <ul>
         <li>
-          <strong style="color:#ff944d;">Field Monitors:</strong>
+          <strong>Field Monitors:</strong>
           keep communication flowing between Tournament HQ, Referee HQ, Security, and EMT.
           In case of injury or safety concern, immediately radio Tournament HQ and report the situation.
           Pick up your <strong>orange vest</strong> and <strong>radio</strong> at check-in and return them
@@ -665,19 +665,19 @@ details th{
         </li>
 
         <li style="margin-top:8px;">
-          <strong style="color:#ff944d;">Field Setup:</strong>
+          <strong>Field Setup:</strong>
           we assemble goals for 40+ visiting teams. Please bring <strong>work gloves</strong>
           and arrive as early as possible (around <strong>6:00 AM</strong> is preferred).
           Setup should be complete by <strong>7:30 AM</strong>.
         </li>
 
         <li style="margin-top:8px;">
-          <strong style="color:#ff944d;">Other volunteer</strong> opportunities include
+          <strong>Other volunteer</strong> opportunities include
           merchandise sales and assisting with the <strong>Shootout Competition</strong>.
         </li>
 
         <li style="margin-top:8px;">
-          <strong style="color:#ff944d;">Important Notice:</strong>
+          <strong>Important Notice:</strong>
           Newbury Park teams are strongly encouraged to provide parent volunteers in field setup,
           field monitoring, and tear-down. Region 42 PSO teams that cannot provide coverage in these
           categories may receive a <strong>one-point deduction</strong> in pool standings to support

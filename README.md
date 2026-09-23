@@ -102,7 +102,7 @@ The Referee Plan asks each team to provide **three or more qualified referees**.
 - Referees must be currently registered AYSO volunteers with current certifications and may represent only one tournament team.
 - Minimum badge levels: **Regional for 10U, Intermediate for 12U, Advanced for 14U**. Exceptions require prior written approval from the tournament Referee Administrator.
 - The Referee Plan prohibits tournament players **and coaches** from officiating. This conflicts with the notes' suggestion that assistant coaches may referee.
-- Submit the RRA-signed Referee Nomination with badge level, certification date, center/assistant competency by division, contact information, and whether the referee has a child on the team. Referees subsequently register online.
+- Submit the RRA-signed Referee Nomination with badge level, certification date, center/assistant competency by division, contact information, and whether the referee has a child on the team. Referee registration opens **November 21, 2026**, after team registration closes so referees can select the team they represent. Registration and game self-scheduling use the same third-party website; the webpage's combined link remains disabled until registration opens.
 - **Check in at Referee HQ at least 20 minutes before the assignment**, per the webpage and updated Referee Plan.
 - Wear a full referee uniform with AYSO badge. Gold is the primary color; bring an alternate for team color conflicts. Complete game cards and misconduct reports and return them to the Field Monitor immediately after the match.
 - The plan provides a daily meal ticket, water/snacks, and a commemorative coin and pin for participating referees.
