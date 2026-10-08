@@ -32,7 +32,7 @@ This README summarizes the seven PDFs in `docs/`, the Tournament Director Notes,
 
 ## Team Registration and Fees
 
-The application requires players to have registered and played in the **2026 AYSO primary season**, and explicitly excludes **AYSO United teams**. The director's notes describe accepting core, Extra, and mixed AYSO teams, with all-star/tournament-select teams preferred. Reconcile the notes' broader “all AYSO teams” wording with the application before publishing eligibility guidance.
+The application and Tournament Rules require players to be **currently registered with AYSO**; prior primary-season or fall-season participation is not required. The Guest Player Approval form uses the same registration requirement. The application explicitly excludes **AYSO United teams**. The director's notes describe accepting core, Extra, and mixed AYSO teams, with all-star/tournament-select teams preferred. Reconcile the notes' broader “all AYSO teams” wording with the application before publishing eligibility guidance.
 
 | Division | Format | Maximum roster | Entry fee | Refundable referee deposit | Total |
 | --- | --- | --- | --- | --- | --- |
@@ -45,13 +45,15 @@ These amounts agree across the application, Referee Plan, and both relevant Rule
 A complete application includes:
 
 1. Team Application signed by the Head Coach and Regional Commissioner (RC).
-2. Online Interest Form.
+2. Online Team Interest Form (the website's **Team Interest Form** button).
 3. RC-approved roster naming the Head Coach and Assistant Coach, with players sorted by jersey number to match game cards. The application and Rules specify **SportsConnect rosters only**.
 4. Referee Nomination approved by the Regional Referee Administrator (RRA), plus youth authorization where applicable.
 5. Guest-player approval where applicable: at most **three guest players**, from neighboring AYSO regions per the application, with approval from both the team RC and each guest player's home RC. Use one Guest Player Approval form per guest-player region.
 6. Entry fee plus referee deposit, paid by the region.
 
-The application and Rules permit a **regional check or Zelle** to `psopay@aysoregion42.org`, with an application payment description such as `PSO-14UG-94-Smith` (`PSO-Div-Region-CoachName`). Mail checks to Panther Shootout Tournament, P.O. Box 709, Newbury Park, CA 91319-0709. Personal checks are not accepted.
+Coaches can submit the Team Interest Form first to help tournament planning, then submit their application, required documents, and regional payment separately. Submitting interest does NOT commit your team.
+
+The application and Rules permit a **regional check or Zelle** to `psopay@aysoregion42.org`, with an application payment description such as `PSO-14UG-94-Smith` (`PSO-Div-Region-CoachName`). Make checks payable to **AYSO Region 42 / Panther Shootout**. Mail checks to Panther Shootout Tournament, P.O. Box 709, Newbury Park, CA 91319-0709. Personal checks are not accepted.
 
 Upload application and referee documents using [**Document Upload**](https://forms.gle/SppFRZBJMm2r2oVE6); **do not email forms**. The website's registration checklist and Document Upload buttons open this form in a new tab. The updated PDFs match the webpage's submission method. The mailing address is for regional checks.
 
@@ -185,7 +187,7 @@ Existing template revision footers and the youth form's 16U competency fields we
 | [panther_shootout_main.html](panther_shootout_main.html) | Standalone page with a complete HTML document, CSS, JavaScript, and centrally configured links. Open directly in a browser or host alongside `docs/`. |
 | [panther_shootout_sportsconnect.html](panther_shootout_sportsconnect.html) | Copy-paste fragment for Sports Connect's HTML/source editor. Contains ordinary HTML and inline `style` attributes, with no `html`, `head`, `body`, `script`, `style`, or iframe elements. |
 
-The fragment needs no JavaScript, external stylesheet, or runtime dependencies. Styles stay on its own elements, the columns wrap on smaller screens, and forms open in a new tab. Disabled controls have no clickable URL. Team Status retains six empty division tables with zero counts in the standalone source; it remains hidden and is omitted from the fragment while hidden. The carousel remains removed from both versions.
+The fragment needs no JavaScript, external stylesheet, or runtime dependencies. Styles stay on its own elements, the columns wrap on smaller screens, and forms open in a new tab. Disabled controls have no clickable URL. Team Status is visible in both versions and lists eight teams across six divisions: two paid teams awaiting document upload and six Region 42 teams awaiting coach assignment. Update the division tables in the standalone source and regenerate the fragment when statuses change. The carousel remains removed from both versions.
 
 ### Change Links in One Place
 

@@ -28,16 +28,22 @@ class SportsConnectExportTests(unittest.TestCase):
         links[key].update(changes)
         return self.source[:match.start(1)] + json.dumps(links) + self.source[match.end(1):]
 
-    def test_fragment_is_self_contained_and_hides_old_team_data(self):
+    def test_fragment_is_self_contained_and_shows_team_status(self):
         fragment, _ = export(self.source)
-        self.assertNotIn('id="pso-team-status"', fragment)
+        self.assertIn('id="pso-team-status"', fragment)
+        ids = {attrs['id'] for _, attrs in Tags(fragment).tags if 'id' in attrs}
+        self.assertIn('href="#pso-shootout-competition"', fragment)
         for tag, attrs in Tags(fragment).tags:
             self.assertNotIn(tag, {'html', 'head', 'body', 'script', 'style', 'iframe', 'noscript'})
             self.assertFalse(any(name.startswith(('on', 'data-')) for name in attrs))
             self.assertNotIn('class', attrs)
             for attribute in ('href', 'src'):
                 if attribute in attrs:
-                    self.assertTrue(attrs[attribute].startswith(('https://', 'mailto:')))
+                    if attribute == 'href' and attrs[attribute].startswith('#'):
+                        self.assertIn(attrs[attribute][1:], ids)
+                        self.assertNotIn('target', attrs)
+                    else:
+                        self.assertTrue(attrs[attribute].startswith(('https://', 'mailto:')))
             if attrs.get('href', '').startswith('https://'):
                 self.assertEqual(attrs.get('target'), '_blank')
                 self.assertEqual(attrs.get('rel'), 'noopener')
@@ -51,18 +57,19 @@ class SportsConnectExportTests(unittest.TestCase):
     def test_public_url_updates_every_repeated_link(self):
         fragment, pending = export(self.configure('rules', enabled=True, sportsConnectUrl='https://example.org/rules.pdf?a=1&b=2'))
         self.assertNotIn('rules', pending)
-        self.assertEqual(fragment.count('href="https://example.org/rules.pdf?a=1&amp;b=2"'), 4)
+        self.assertEqual(fragment.count('href="https://example.org/rules.pdf?a=1&amp;b=2"'), 5)
         self.assertNotIn('Tournament Rules — coming soon', fragment)
 
     def test_public_standalone_url_is_used_when_override_is_empty(self):
         fragment, pending = export(self.configure('rules', url='https://example.org/rules.pdf', enabled=True, sportsConnectUrl=''))
         self.assertNotIn('rules', pending)
-        self.assertEqual(fragment.count('href="https://example.org/rules.pdf"'), 4)
+        self.assertEqual(fragment.count('href="https://example.org/rules.pdf"'), 5)
 
     def test_disabled_link_has_no_clickable_destination(self):
         fragment, _ = export(self.configure('teamRegistration', url='https://example.org/registration', enabled=False))
         self.assertNotIn('href="https://example.org/registration"', fragment)
-        self.assertIn('Team Registration Form</span>', fragment)
+        self.assertEqual(fragment.count('Team Registration</span>'), 1)
+        self.assertEqual(fragment.count('Register Your Team</span>'), 2)
 
     def test_invalid_published_url_is_rejected(self):
         for value in ('docs/rules.pdf', 'javascript:alert(1)'):

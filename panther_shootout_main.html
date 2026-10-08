@@ -12,6 +12,10 @@
 // If empty, public URLs above are reused; local files show as coming soon.
 // BEGIN LINK CONFIG
 const LINKS = {
+  "tournamentEmblem": {
+    "url": "https://www.aysoregion42.org/portals/14695/docs/panthershootout/pso_emblem_2026%20(2).png",
+    "enabled": true
+  },
   "map": {
     "url": "https://maps.google.com/?q=3720+Old+Conejo+Rd,+Thousand+Oaks,+CA+91320",
     "enabled": true
@@ -323,7 +327,7 @@ details th{
         10U, 12U, and 14U divisions to the
         <strong>28th Annual Panther Shootout</strong>.
         After each pool play game, teams participate in the
-        <strong>Shootout Competition</strong>.
+        <a class="text-link" href="#shootout-competition">Shootout Competition</a>.
       </p>
 
       <p>
@@ -371,43 +375,53 @@ details th{
 
 <!-- ========== REGISTRATION ========== -->
 <div class="info-section" id="registration">
-  <h2>Registration</h2>
+  <h2>Team Registration</h2>
   <div class="info-grid">
 
     <div class="info-box info-text">
       <p>
-        Registration for the 28th Annual Panther Shootout
-        opens on <strong>October 1, 2026</strong>.
-        The <strong>last day to register is November 20, 2026</strong>.
-        Team participation status will be displayed on this website.
+        <strong>Coaches, let's get your team ready for kickoff!</strong>
+        Follow these three steps to prepare your tournament application.
+        Registration runs <strong>October 1–November 20, 2026</strong>.
       </p>
 
-      <h3>Coach Registration Checklist</h3>
+      <h3>Your Road to the Panther Shootout</h3>
       <ol style="padding-left:20px; margin:8px 0 10px;">
         <li>
-          Complete the <a class="reg-emph text-link"
+          <strong>Register your team.</strong>
+          Complete <a class="reg-emph text-link"
                           data-link="teamRegistration"
                           rel="noopener"
-                          target="_blank">Team Registration Form</a>.
+                          target="_blank">Team Registration</a> to introduce your team to Tournament HQ and receive tournament updates.
         </li>
         <li>
-          Complete and Submit the <a class="reg-emph text-link" data-link="application" rel="noopener" target="_blank">Application Form</a>
-          and required Referee Forms.
+          <strong>Complete and submit your forms.</strong>
+          Fill out the <a class="reg-emph text-link" data-link="application" rel="noopener" target="_blank">Application Form</a>
+          and required <a class="reg-emph text-link" data-link="refereeNomination" rel="noopener" target="_blank">Referee Forms</a>,
+          including all required signatures and approvals.
+          If your team does not send referees, your referee deposit will be forfeited.
+          <p>
+            Submit your completed forms through
+            <a class="reg-emph text-link"
+               data-link="documentUpload"
+               rel="noopener"
+               target="_blank">Document Upload</a>.
+            <strong>Uploading is preferred for faster processing.</strong>
+            If you are unable to upload, mail your completed forms to the address in step 3.
+          </p>
+          <p>
+            Your roster may be submitted separately up to one week before the tournament.
+            Please submit your application without waiting for your roster.
+          </p>
         </li>
         <li>
-          Upload all completed documents using
-          <a class="reg-emph text-link"
-             data-link="documentUpload"
-             rel="noopener"
-             target="_blank">Document Upload</a> (opens in a new tab).
-          <strong>DO NOT</strong> email forms to the Tournament Director.
-        </li>
-        <li>
-          Send payment from your AYSO Region - contact your region's tresurer:
+          <strong>Arrange regional payment.</strong>
+          Contact your AYSO Region's treasurer to send payment by check or Zelle using the details below.
           <ul style="margin-top:6px;">
             <li>
               <strong>Check:</strong>
-              mail to Panther Shootout, P.O. Box 709, Newbury Park, CA 91319-0709
+              Make checks payable to <strong>AYSO Region 42 / Panther Shootout</strong>.
+              Mail to Panther Shootout, P.O. Box 709, Newbury Park, CA 91319-0709.
             </li>
             <li>
               <strong>Zelle:</strong>
@@ -431,12 +445,12 @@ details th{
       <a class="btn btn-primary"
          data-link="teamRegistration"
          rel="noopener"
-         target="_blank">Team Registration Form</a>
+         target="_blank">Register Your Team</a>
 
       <a class="btn btn-ghost"
          data-link="documentUpload"
          rel="noopener"
-         target="_blank">Document Upload</a>
+         target="_blank">Upload Your Documents</a>
 
       <a class="btn btn-ghost"
          data-link="application"
@@ -463,62 +477,91 @@ details th{
 </div>
 
 <!-- ========== TEAM STATUS ========== -->
-<div class="info-section" id="team-status" style="display:none;">
+<div class="info-section" id="team-status">
   <h2>Team Status</h2>
-  <div class="info-box">
-<details>
-        <summary><strong>10UB</strong><span class="badge">0</span></summary>
+  <div class="info-grid">
+    <div class="info-box info-text">
+      <p>
+        <strong>Follow your team's road to the Shootout.</strong>
+        View current team application and acceptance status by division.
+      </p>
+      <p>
+        Ready to get started? <a class="text-link" data-link="teamRegistration" rel="noopener" target="_blank">Register Your Team</a>.
+      </p>
+      <details>
+        <summary><strong>10UB</strong><span class="badge">Open 6</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
+            <tr><td>10UB-638-Pikkel</td><td>Paid, App, Ref forms submitted</td></tr>
+            <tr><td>10UB-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>10UG</strong><span class="badge">0</span></summary>
+        <summary><strong>10UG</strong><span class="badge">Open 7</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
+            <tr><td>10UG-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>12UB</strong><span class="badge">0</span></summary>
+        <summary><strong>12UB</strong><span class="badge">Open 7</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
+            <tr><td>12UB-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>12UG</strong><span class="badge">0</span></summary>
+        <summary><strong>12UG</strong><span class="badge">Open 6</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
+            <tr><td>12UG-638-Carper</td><td>Paid, Waiting for Doc Upload</td></tr>
+            <tr><td>12UG-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>14UB</strong><span class="badge">0</span></summary>
+        <summary><strong>14UB</strong><span class="badge">Open 7</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
+            <tr><td>14UB-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>14UG</strong><span class="badge">0</span></summary>
+        <summary><strong>14UG</strong><span class="badge">Open 7</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
+            <tr><td>14UG-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
           </tbody>
         </table>
       </details>
+    </div>
+
+    <div class="info-box info-actions" style="align-items:center;justify-content:center;">
+      <a data-link="rules"
+         rel="noopener"
+         target="_blank"
+         aria-label="View Panther Shootout Tournament Rules"
+         style="display:block;width:100%;">
+        <img alt="2026 Panther Shootout tournament emblem"
+             data-image="tournamentEmblem"
+             style="display:block;width:100%;height:auto;border-radius:8px;">
+      </a>
+    </div>
   </div>
 </div>
 
@@ -533,6 +576,12 @@ details th{
         Bring <strong>exactly five completed <a class="text-link" data-link="gameCard" rel="noopener" target="_blank">Game Cards</a></strong>
         printed on card stock using the tournament's fillable PDF template, along with your
         <strong>Roster and Player Release Forms</strong>.
+      </p>
+      <h3 id="shootout-competition">Shootout Competition</h3>
+      <p>
+        After each pool play game, teams face the team they just played in a separate
+        shootout area. Goals scored across the shootouts are tallied separately from
+        match standings, and the winning team in each age group earns a prize.
       </p>
       <p>
         Every player takes part in the <strong>Shootout Competition</strong>:
@@ -591,13 +640,6 @@ details th{
       <p>
         Youth referees may <strong>NOT</strong> also be rostered players. Any referee with a child in the tournament
         must refrain from officiating their child’s match to maintain neutrality.
-      </p>
-
-      <p>
-        Center Referees: If a spectator, coach, or player becomes abusive or refuses to follow instructions,
-        you are empowered to <strong>stop the match</strong> immediately by picking up the ball
-        and directing the offending individual to leave the park.
-        Do not restart the match until they comply. A Field Monitor will contact HQ so staff can assist.
       </p>
 
       <div class="rule"></div>
@@ -692,10 +734,6 @@ details th{
          rel="noopener"
          target="_blank">Volunteer Registration</a>
 
-      <a class="btn btn-muted"
-         data-link="volunteerSignup"
-         rel="noopener"
-         target="_blank">Sign Up Genius</a>
     </div>
 
   </div>

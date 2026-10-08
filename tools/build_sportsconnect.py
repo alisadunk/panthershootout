@@ -162,6 +162,8 @@ def export(source):
                  if name != 'class' and not name.startswith(('data-', 'on'))}
         if 'id' in attrs:
             attrs['id'] = 'pso-' + attrs['id']
+        if attrs.get('href', '').startswith('#'):
+            attrs['href'] = '#pso-' + attrs['href'][1:]
         if style:
             attrs['style'] = ';'.join(f'{name}:{value}' for name, value in style.items()) + ';'
         if tag == 'section':
