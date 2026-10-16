@@ -72,6 +72,19 @@ def declarations(text):
     return result
 
 
+def public_destination(link, key):
+    """Use a published override or public source URL; local files stay pending."""
+    override = link.get('sportsConnectUrl', '')
+    destination = override or link['url']
+    parsed = urlsplit(destination)
+    if not override and not parsed.scheme:
+        return ''
+    if not ((parsed.scheme == 'https' and parsed.netloc)
+            or (parsed.scheme == 'mailto' and parsed.path)):
+        raise ValueError(f'{key}: Sports Connect requires an absolute HTTPS or mailto URL')
+    return destination
+
+
 def export(source):
     match = re.search(r'// BEGIN LINK CONFIG\s+const LINKS = (\{.*?\});\s+// END LINK CONFIG',
                       source, re.S)
@@ -96,6 +109,24 @@ def export(source):
     if len(parser.stack) != 1:
         raise ValueError('Unclosed source HTML elements')
     pending = set()
+    destinations = {}
+    style_cache = {}
+
+    def destination_for(key):
+        if key not in destinations:
+            destinations[key] = public_destination(links[key], key)
+        return destinations[key]
+
+    def base_style(tag, classes):
+        # Repeated buttons and table cells share the same computed base styles.
+        key = (tag, frozenset(classes))
+        if key not in style_cache:
+            style = {}
+            for _, selector, properties in rules:
+                if selector == tag or (selector.startswith('.') and selector[1:] in classes):
+                    style.update(properties)
+            style_cache[key] = style
+        return style_cache[key].copy()
 
     def render(node):
         if isinstance(node, str):
@@ -114,14 +145,7 @@ def export(source):
         if 'data-link' in attrs:
             key = attrs['data-link']
             link = links[key]
-            destination = link.get('sportsConnectUrl', link['url'])
-            if not destination and urlsplit(link['url']).scheme in {'https', 'mailto'}:
-                destination = link['url']
-            if destination:
-                parsed = urlsplit(destination)
-                if not ((parsed.scheme == 'https' and parsed.netloc)
-                        or (parsed.scheme == 'mailto' and parsed.path)):
-                    raise ValueError(f'{key}: Sports Connect requires an absolute HTTPS or mailto URL')
+            destination = destination_for(key) if link['enabled'] else ''
             if link['enabled'] and destination:
                 attrs['href'] = destination
                 if 'btn-muted' in classes:
@@ -141,15 +165,11 @@ def export(source):
                     classes = [c for c in classes if c not in ('btn-primary', 'btn-ghost', 'btn-muted')]
                     classes.append('btn-muted')
         if 'data-image' in attrs:
-            image = links[attrs['data-image']]
-            attrs['src'] = image.get('sportsConnectUrl', image['url'])
+            attrs['src'] = destination_for(attrs['data-image'])
             if not attrs['src'].startswith('https://'):
                 raise ValueError('Fragment images require public HTTPS URLs')
 
-        style = {}
-        for _, selector, properties in rules:
-            if selector == node.tag or (selector.startswith('.') and selector[1:] in classes):
-                style.update(properties)
+        style = base_style(node.tag, classes)
         style.update(inline)
         if 'section' in classes:
             style.update({'font-family': 'Arial,Helvetica,sans-serif',

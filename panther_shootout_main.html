@@ -144,6 +144,7 @@ th,td{
   border:1px solid #e5e7eb;
   padding:6px 8px;
   text-align:left;
+  overflow-wrap:anywhere;
 }
 th{
   background:#fff3d1;
@@ -161,7 +162,7 @@ caption{
 }
 a{
   color:#ffbf24;
-  font-weight:700;
+  font-weight:400;
   text-decoration:underline;
 }
 a:hover{
@@ -194,9 +195,17 @@ a:hover{
 .info-section{
   margin-top:24px;
 }
-.reg-emph{
-  color:#ffbf24;
-  font-weight:700;
+.mailing-address{
+  margin:8px 0 0;
+  padding:12px 16px;
+  background:#fff3d1;
+  border:2px solid #ffbf24;
+  border-radius:8px;
+  box-sizing:border-box;
+  overflow-wrap:anywhere;
+  font-size:14px;
+  line-height:1.5;
+  color:#111;
 }
 .text-link{
   text-decoration:underline;
@@ -277,26 +286,7 @@ summary::-webkit-details-marker{
   font-weight:700;
   font-size:11px;
 }
-details table{
-  width:100%;
-  border-collapse:collapse;
-  font-size:13px;
-}
-details th,
-details td{
-  padding:6px 8px;
-  border-top:1px solid #e5e7eb;
-  text-align:left;
-}
-details th{
-  background:#fff3d1;
-  font-weight:700;
-}
-
 @media (max-width:768px){
-  .info-grid{
-    flex-wrap:wrap;
-  }
   .info-text,
   .info-actions{
     flex:0 0 100%;
@@ -325,7 +315,7 @@ details th{
       <p>
         Region 42 is proud to invite AYSO boys and girls competitive teams in
         10U, 12U, and 14U divisions to the
-        <strong>28th Annual Panther Shootout</strong>.
+        28th Annual Panther Shootout.
         After each pool play game, teams participate in the
         <a class="text-link" href="#shootout-competition">Shootout Competition</a>.
       </p>
@@ -379,51 +369,43 @@ details th{
   <div class="info-grid">
 
     <div class="info-box info-text">
-      <p>
-        <strong>Coaches, let's get your team ready for kickoff!</strong>
+      <p style="margin:0 0 12px;">
+        Coaches, let's get your team ready for kickoff!
         Follow these three steps to prepare your tournament application.
         Registration runs <strong>October 1–November 20, 2026</strong>.
       </p>
 
-      <h3>Your Road to the Panther Shootout</h3>
-      <ol style="padding-left:20px; margin:8px 0 10px;">
-        <li>
+      <h3 style="margin:0 0 8px;">Your Road to the Panther Shootout</h3>
+      <ol style="padding-left:20px;margin:0 0 12px;">
+        <li style="margin:0 0 12px;">
           <strong>Register your team.</strong>
-          Complete <a class="reg-emph text-link"
+          Complete <a class="text-link"
                           data-link="teamRegistration"
                           rel="noopener"
                           target="_blank">Team Registration</a> to introduce your team to Tournament HQ and receive tournament updates.
         </li>
-        <li>
-          <strong>Complete and submit your forms.</strong>
-          Fill out the <a class="reg-emph text-link" data-link="application" rel="noopener" target="_blank">Application Form</a>
-          and required <a class="reg-emph text-link" data-link="refereeNomination" rel="noopener" target="_blank">Referee Forms</a>,
-          including all required signatures and approvals.
-          If your team does not send referees, your referee deposit will be forfeited.
-          <p>
-            Submit your completed forms through
-            <a class="reg-emph text-link"
-               data-link="documentUpload"
-               rel="noopener"
-               target="_blank">Document Upload</a>.
-            <strong>Uploading is preferred for faster processing.</strong>
-            If you are unable to upload, mail your completed forms to the address in step 3.
+        <li style="margin:0 0 12px;">
+          <p style="margin:0;">
+            <strong>Complete the Application</strong>,
+            get the Regional Commissioner's (RC) signature and other required approvals and forms,
+            then <a class="text-link" data-link="documentUpload" rel="noopener" target="_blank" style="font-weight:700;">upload the completed application**</a>.
           </p>
-          <p>
-            Your roster may be submitted separately up to one week before the tournament.
+          <p style="margin:8px 0 0;">
+            Your roster, guest-player forms, and referee nomination*
+            (including youth-referee forms, if applicable) can be uploaded separately
+            before the end of registration on November 20.
             Please submit your application without waiting for your roster.
           </p>
         </li>
-        <li>
+        <li style="margin:0;">
           <strong>Arrange regional payment.</strong>
           Contact your AYSO Region's treasurer to send payment by check or Zelle using the details below.
-          <ul style="margin-top:6px;">
-            <li>
+          <ul style="margin:8px 0 0;">
+            <li style="margin:0 0 8px;">
               <strong>Check:</strong>
-              Make checks payable to <strong>AYSO Region 42 / Panther Shootout</strong>.
-              Mail to Panther Shootout, P.O. Box 709, Newbury Park, CA 91319-0709.
+              Make checks payable to AYSO Region 42 / Panther Shootout.
             </li>
-            <li>
+            <li style="margin:0;">
               <strong>Zelle:</strong>
               psopay@aysoregion42.org
               <br>
@@ -432,10 +414,23 @@ details th{
               </span>
             </li>
           </ul>
+          <div class="mailing-address">
+            <strong>Mail regional checks to:</strong><br>
+            Panther Shootout<br>
+            P.O. Box 709<br>
+            Newbury Park, CA 91319-0709
+          </div>
         </li>
       </ol>
 
-      <p>
+      <p style="margin:0 0 4px;">
+        <em>* If your team does not send referees, your referee deposit will be forfeited.</em>
+      </p>
+      <p style="margin:0 0 12px;">
+        <em>** If you are unable to upload your completed forms, you may mail them to the address in step 3.</em>
+      </p>
+
+      <p style="margin:0;">
         Questions:
         <a class="text-link" data-link="directorEmail">tournament.director@aysoregion42.org</a>
       </p>
@@ -482,25 +477,25 @@ details th{
   <div class="info-grid">
     <div class="info-box info-text">
       <p>
-        <strong>Follow your team's road to the Shootout.</strong>
+        Follow your team's road to the Shootout.
         View current team application and acceptance status by division.
       </p>
       <p>
         Ready to get started? <a class="text-link" data-link="teamRegistration" rel="noopener" target="_blank">Register Your Team</a>.
       </p>
       <details>
-        <summary><strong>10UB</strong><span class="badge">Open 6</span></summary>
+        <summary><strong>10UB</strong><span class="badge">Open</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>10UB-638-Pikkel</td><td>Paid, App, Ref forms submitted</td></tr>
+            <tr><td>10UB-638-Pikkel</td><td>Payment received; application and referee forms submitted</td></tr>
             <tr><td>10UB-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>10UG</strong><span class="badge">Open 7</span></summary>
+        <summary><strong>10UG</strong><span class="badge">Open</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
@@ -510,7 +505,7 @@ details th{
       </details>
 
       <details>
-        <summary><strong>12UB</strong><span class="badge">Open 7</span></summary>
+        <summary><strong>12UB</strong><span class="badge">Open</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
@@ -520,18 +515,18 @@ details th{
       </details>
 
       <details>
-        <summary><strong>12UG</strong><span class="badge">Open 6</span></summary>
+        <summary><strong>12UG</strong><span class="badge">Open</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>12UG-638-Carper</td><td>Paid, Waiting for Doc Upload</td></tr>
+            <tr><td>12UG-638-Carper</td><td>Payment received; awaiting document upload</td></tr>
             <tr><td>12UG-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>14UB</strong><span class="badge">Open 7</span></summary>
+        <summary><strong>14UB</strong><span class="badge">Open</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
@@ -541,7 +536,7 @@ details th{
       </details>
 
       <details>
-        <summary><strong>14UG</strong><span class="badge">Open 7</span></summary>
+        <summary><strong>14UG</strong><span class="badge">Open</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
@@ -558,6 +553,7 @@ details th{
          aria-label="View Panther Shootout Tournament Rules"
          style="display:block;width:100%;">
         <img alt="2026 Panther Shootout tournament emblem"
+             loading="lazy" decoding="async"
              data-image="tournamentEmblem"
              style="display:block;width:100%;height:auto;border-radius:8px;">
       </a>
@@ -573,9 +569,9 @@ details th{
     <div class="info-box info-text">
       <p>
         Please arrive for check-in about an hour before your first match.
-        Bring <strong>exactly five completed <a class="text-link" data-link="gameCard" rel="noopener" target="_blank">Game Cards</a></strong>
+        Bring <strong>exactly five</strong> completed <a class="text-link" data-link="gameCard" rel="noopener" target="_blank">Game Cards</a>
         printed on card stock using the tournament's fillable PDF template, along with your
-        <strong>Roster and Player Release Forms</strong>.
+        Roster and Player Release Forms.
       </p>
       <h3 id="shootout-competition">Shootout Competition</h3>
       <p>
@@ -584,7 +580,7 @@ details th{
         match standings, and the winning team in each age group earns a prize.
       </p>
       <p>
-        Every player takes part in the <strong>Shootout Competition</strong>:
+        Every player takes part in the Shootout Competition:
         five kickers and one goalkeeper for each of the three shootouts after pool play games.
         One of the game cards is used to track participation. Refer to the <a class="text-link" data-link="rules" rel="noopener" target="_blank">Tournament Rules</a> for full details.
       </p>
@@ -661,7 +657,7 @@ details th{
       </table>
 
       <p style="font-size:13px;">
-        <em>Playoff round winners are decided by penalty kicks after regulation time. No extra periods.</em>
+        <em>Tied playoff matches are decided by penalty kicks after regulation. No overtime.</em>
       </p>
     </div>
 
@@ -692,7 +688,7 @@ details th{
 
     <div class="info-box info-text">
       <p>
-        Please come and <strong>volunteer</strong> for the Panther Shootout!
+        Please come and volunteer for the Panther Shootout!
         We need your help to make this event a success. Check in at Tournament HQ upon arrival
         to receive your volunteer T-shirt. Go Panthers!
       </p>
@@ -702,20 +698,20 @@ details th{
           <strong>Field Monitors:</strong>
           keep communication flowing between Tournament HQ, Referee HQ, Security, and EMT.
           In case of injury or safety concern, immediately radio Tournament HQ and report the situation.
-          Pick up your <strong>orange vest</strong> and <strong>radio</strong> at check-in and return them
+          Pick up your orange vest and radio at check-in and return them
           at the end of your shift.
         </li>
 
         <li style="margin-top:8px;">
           <strong>Field Setup:</strong>
-          we assemble goals for 40+ visiting teams. Please bring <strong>work gloves</strong>
-          and arrive as early as possible (around <strong>6:00 AM</strong> is preferred).
+          we assemble goals for 40+ visiting teams. Please bring work gloves
+          and arrive as early as possible (around 6:00 AM is preferred).
           Setup should be complete by <strong>7:30 AM</strong>.
         </li>
 
         <li style="margin-top:8px;">
-          <strong>Other volunteer</strong> opportunities include
-          merchandise sales and assisting with the <strong>Shootout Competition</strong>.
+          Other volunteer opportunities include
+          merchandise sales and assisting with the Shootout Competition.
         </li>
 
         <li style="margin-top:8px;">

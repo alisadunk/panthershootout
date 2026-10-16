@@ -65,6 +65,38 @@ class SportsConnectExportTests(unittest.TestCase):
         self.assertNotIn('rules', pending)
         self.assertEqual(fragment.count('href="https://example.org/rules.pdf"'), 5)
 
+    def test_local_pdf_without_override_stays_pending(self):
+        match = re.search(r'const LINKS = (\{.*?\});', self.source, re.S)
+        links = json.loads(match.group(1))
+        links['rules'] = {'url': 'docs/rules.pdf', 'enabled': True}
+        source = self.source[:match.start(1)] + json.dumps(links) + self.source[match.end(1):]
+        fragment, pending = export(source)
+        self.assertIn('rules', pending)
+        self.assertNotIn('href="docs/', fragment)
+
+    def test_disabled_local_link_does_not_require_public_url(self):
+        fragment, pending = export(self.configure('schedule', url='docs/schedule.pdf', enabled=False))
+        self.assertNotIn('schedule', pending)
+        self.assertIn('Game Schedule</span>', fragment)
+
+    def test_image_uses_public_source_when_override_is_empty(self):
+        fragment, _ = export(self.configure('fieldMap', sportsConnectUrl=''))
+        images = [attrs for tag, attrs in Tags(fragment).tags if tag == 'img']
+        self.assertTrue(any(attrs['src'].endswith('small.jpg') for attrs in images))
+
+    def test_invalid_image_destination_is_rejected(self):
+        for value in ('https://', 'mailto:someone@example.org', 'images/map.jpg'):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                export(self.configure('fieldMap', sportsConnectUrl=value))
+
+    def test_cached_styles_do_not_share_inline_overrides(self):
+        source = self.source.replace('data-link="rules"',
+                                     'style="letter-spacing:9px;" data-link="rules"', 1)
+        fragment, _ = export(source)
+        styled = [attrs for _, attrs in Tags(fragment).tags
+                  if 'letter-spacing:9px' in attrs.get('style', '')]
+        self.assertEqual(len(styled), 1)
+
     def test_disabled_link_has_no_clickable_destination(self):
         fragment, _ = export(self.configure('teamRegistration', url='https://example.org/registration', enabled=False))
         self.assertNotIn('href="https://example.org/registration"', fragment)

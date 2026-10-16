@@ -45,19 +45,46 @@ These amounts agree across the application, Referee Plan, and both relevant Rule
 A complete application includes:
 
 1. Team Application signed by the Head Coach and Regional Commissioner (RC).
-2. Online Team Interest Form (the website's **Team Interest Form** button).
+2. Online Team Registration form (the website's **Register Your Team** button).
 3. RC-approved roster naming the Head Coach and Assistant Coach, with players sorted by jersey number to match game cards. The application and Rules specify **SportsConnect rosters only**.
 4. Referee Nomination approved by the Regional Referee Administrator (RRA), plus youth authorization where applicable.
 5. Guest-player approval where applicable: at most **three guest players**, from neighboring AYSO regions per the application, with approval from both the team RC and each guest player's home RC. Use one Guest Player Approval form per guest-player region.
 6. Entry fee plus referee deposit, paid by the region.
 
-Coaches can submit the Team Interest Form first to help tournament planning, then submit their application, required documents, and regional payment separately. Submitting interest does NOT commit your team.
+Coaches can submit the Team Registration form first to help tournament planning, then submit their application, required documents, and regional payment separately.
 
 The application and Rules permit a **regional check or Zelle** to `psopay@aysoregion42.org`, with an application payment description such as `PSO-14UG-94-Smith` (`PSO-Div-Region-CoachName`). Make checks payable to **AYSO Region 42 / Panther Shootout**. Mail checks to Panther Shootout Tournament, P.O. Box 709, Newbury Park, CA 91319-0709. Personal checks are not accepted.
 
-Upload application and referee documents using [**Document Upload**](https://forms.gle/SppFRZBJMm2r2oVE6); **do not email forms**. The website's registration checklist and Document Upload buttons open this form in a new tab. The updated PDFs match the webpage's submission method. The mailing address is for regional checks.
+The first paragraph of registration step 2 begins with **Complete the Application** without a link: complete it, obtain the Regional Commissioner's (RC) signature and other required approvals, then upload the completed application using [**Document Upload**](https://forms.gle/xY1WDDPb99jjsJVUA). Uploading completed forms is the primary submission method. An italic ** note below the steps allows mailing completed forms to the address in step 3 if uploading does not work; that address also accepts regional checks. An italic * note explains that teams without referees forfeit their referee deposit. The website's upload links open in a new tab. The second paragraph of step 2 is a plain-text supporting-document reminder with no links or yellow emphasis. It allows the roster, guest-player forms, referee nomination, and applicable youth-referee forms to be uploaded separately before the end of registration on November 20. Download and upload links remain in the action buttons; there is no separate roster template configured. Coaches should submit their application without waiting for their roster. Check these submission deadlines against the PDFs; do not assume the documents are fully aligned.
 
 Roster changes need RC approval and must be finalized by initial tournament check-in; the Rules ask that changes reach the registrar before check-in. A player may appear on only one team. Each team has one Head Coach and one Assistant Coach, both registered volunteers with current certifications and age-appropriate coach certification.
+
+### Fillable Registration Forms
+
+The local PDFs in `docs/` now have native fillable fields for team details, contacts, referee qualifications, guest players, and division selections:
+
+| Form | Fillable fields |
+| --- | --- |
+| [Team Application](docs/6%20Application%202026.pdf) | 31; entry fields are on page 2, with instructions unchanged on page 1 |
+| [Referee Nomination](docs/11%20Ref%20Nomination%202026.pdf) | 54 |
+| [Youth Referee Letter](docs/12%20Youth%20Referee%202026.pdf) | 31, including qualification checkboxes |
+| [Guest Player Approval](docs/8%20Guest%20Player%202026.pdf) | 50, including three guest-player rows |
+
+Open a PDF in a viewer that supports forms, enter the details, select the appropriate checkboxes, and save a completed copy. Print it and obtain the required ink signatures, then scan and upload the completed form. If uploading does not work, mail the completed forms to the address in registration step 3. Approval signature areas remain for signing by hand as required by the existing printed instructions. The supplied files are blank, and their original layouts, colors, logos, text, and page counts are preserved. The Game Card remains fillable; the Tournament Rules and Referee Plan remain reference documents.
+
+The website links use hosted public PDFs. Upload these updated local files to replace the hosted copies before visitors can use the new fields. If their public URLs change, update `LINKS` and regenerate the Sports Connect fragment. The public copies have not been replaced by this local update.
+
+`tools/make_forms_fillable.py` requires PyMuPDF and creates review copies without overwriting the source files. For example, from the repository directory:
+
+```powershell
+& ..\.pdf-tools\python\python.exe tools/make_forms_fillable.py --output-dir ..\.pdf-tools\fillable-forms-review\rebuild
+```
+
+PDF tests check blank deliverables, saved text and checkbox values, unchanged artwork, and clear ink-signature areas. Run them with the website tests using the portable runtime:
+
+```powershell
+& ..\.pdf-tools\python\python.exe -m unittest discover -s tools -p "test_*.py"
+```
 
 ### Acceptance and Refunds
 
@@ -162,7 +189,7 @@ The application, Guest Player Approval, Tournament Rules, Referee Plan, and Yout
 - Replaced the Rules' E4 roster reference with SportsConnect and aligned payment/document submission with the website: regional check or Zelle, online document upload, and no emailed forms.
 - Changed Referee Plan check-in from 30 to 20 minutes to match the webpage, and corrected the director's name.
 - Replaced the Youth Referee Letter's unrelated tournament name and removed the Rules' obsolete overtime-substitution instruction in favor of the existing no-overtime rule.
-- Pointed all six form/rules download destinations in the standalone page to the PDFs in `docs/`. The Sports Connect fragment needs public file URLs, configured as described below.
+- Initially pointed all six form/rules download destinations to the PDFs in `docs/`. The current standalone page and Sports Connect fragment use configured public HTTPS URLs for those PDFs and the fillable game card.
 
 Existing template revision footers and the youth form's 16U competency fields were retained. The corrections above do not establish approval of the unresolved policies below.
 
@@ -171,6 +198,7 @@ Existing template revision footers and the youth form's 16U competency fields we
 | Topic | Difference requiring a decision or correction |
 | --- | --- |
 | Acceptance | PDFs: status 14 days before play, with differing late-application windows; notes: final acceptance one week before Thanksgiving. |
+| Supporting documents | Webpage permits the roster, guest-player forms, and referee nomination to be uploaded separately before the end of registration on November 20. Check the PDF submission deadlines against this guidance. Upload completed forms; if uploading does not work, they may be mailed to the address in step 3, which also accepts regional checks. |
 | Eligibility | Application excludes AYSO United; notes broadly say all AYSO teams. |
 | Coaches as referees | Referee Plan prohibits coaches; notes allow assistant coaches. |
 | Local volunteer exception | Notes offer referee/deposit relief for setup/teardown help and mention a possible standings penalty; confirm terms against published referee and scoring rules. |
@@ -187,7 +215,7 @@ Existing template revision footers and the youth form's 16U competency fields we
 | [panther_shootout_main.html](panther_shootout_main.html) | Standalone page with a complete HTML document, CSS, JavaScript, and centrally configured links. Open directly in a browser or host alongside `docs/`. |
 | [panther_shootout_sportsconnect.html](panther_shootout_sportsconnect.html) | Copy-paste fragment for Sports Connect's HTML/source editor. Contains ordinary HTML and inline `style` attributes, with no `html`, `head`, `body`, `script`, `style`, or iframe elements. |
 
-The fragment needs no JavaScript, external stylesheet, or runtime dependencies. Styles stay on its own elements, the columns wrap on smaller screens, and forms open in a new tab. Disabled controls have no clickable URL. Team Status is visible in both versions and lists eight teams across six divisions: two paid teams awaiting document upload and six Region 42 teams awaiting coach assignment. Update the division tables in the standalone source and regenerate the fragment when statuses change. The carousel remains removed from both versions.
+The fragment needs no JavaScript, external stylesheet, or runtime dependencies. Styles stay on its own elements, the columns wrap on smaller screens, and forms open in a new tab. Disabled controls have no clickable URL. Team Status is visible in both versions and lists eight teams across six divisions: one paid team with application and referee forms submitted, one paid team awaiting document upload, and six Region 42 teams awaiting coach assignment. Division badges show **Open** without displaying an available-spot count. Update the division tables in the standalone source and regenerate the fragment when statuses change. The carousel remains removed from both versions.
 
 ### Change Links in One Place
 
@@ -197,7 +225,7 @@ Edit the `LINKS` object near the top of `panther_shootout_main.html`:
 - `enabled`: `true` enables a link; `false` leaves it visibly inactive in both versions.
 - `sportsConnectUrl`: optional public HTTPS destination for a locally stored file. Upload the file to Sports Connect first, then paste its actual public URL here or in `url`. When this override is empty, an existing public `url` is reused; local files display as **coming soon** in the fragment.
 
-The team registration and document-upload forms are active. The schedule, referee registration/scheduling, and volunteer signup links remain inactive, matching their earlier state. Public destinations for the six 2026 PDFs and game-card workbook have not been supplied; those downloads are marked coming soon in the fragment. The standalone page retains its local PDF links and existing game-card path.
+The team registration and document-upload forms are active. The schedule, referee registration/scheduling, and volunteer registration/signup links remain inactive. Public HTTPS destinations are configured for the six 2026 form/rules PDFs and the fillable game-card PDF, so those downloads are active in both versions. The disabled schedule still points to a 2025 PDF; replace that destination with the 2026 schedule before enabling it.
 
 Keep `LINKS` JSON-compatible: double-quoted keys/strings, lowercase `true`/`false`, and no trailing commas or comments inside the object.
 
@@ -229,7 +257,7 @@ python -m unittest discover -s tools -p "test_*.py"
 1. Open `panther_shootout_sportsconnect.html` in a text editor and copy its entire contents.
 2. Open the destination content module's **HTML/source** editor in Sports Connect and paste the fragment there, not into the visual rich-text view.
 3. Save and preview on desktop and mobile. Check that the editor retains inline styling and that the form links open correctly.
-4. Once the 2026 files are uploaded, fill in their `sportsConnectUrl` values, regenerate, and paste the updated fragment.
+4. When replacing an uploaded file, update its public `url` or `sportsConnectUrl`, regenerate, and paste the updated fragment.
 
 The fragment is checked locally; its saved appearance inside your particular Sports Connect editor still needs a preview there. Local `docs/...` paths cannot serve repository files from a Sports Connect page.
 
@@ -245,4 +273,4 @@ Open `panther_shootout_main.html` directly in a browser and refresh after saving
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Then visit <http://localhost:8000/panther_shootout_main.html>. The six local PDF downloads work in this preview. Remote forms/maps require internet access, and the remaining game-card `portals/...` link will not resolve locally. Regenerate the fragment after changing the standalone page; PDF and README content still require separate updates when tournament details change.
+Then visit <http://localhost:8000/panther_shootout_main.html>. The configured PDF downloads, forms, maps, and images use public URLs and require internet access. Local reference PDFs remain in `docs/`. Regenerate the fragment after changing the standalone page; PDF and README content still require separate updates when tournament details change.
