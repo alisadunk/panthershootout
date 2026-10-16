@@ -17,6 +17,28 @@ SOURCE = ROOT / 'panther_shootout_main.html'
 DESTINATION = ROOT / 'panther_shootout_sportsconnect.html'
 VOID_TAGS = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
              'link', 'meta', 'param', 'source', 'track', 'wbr'}
+# Sports Connect's Atlas theme adds paragraph/heading padding and resets native
+# typography. Set these defaults on the fragment's own elements so its appearance
+# does not depend on the host theme. Source CSS and inline overrides still win.
+CMS_DEFAULTS = {
+    'p': {'margin': '14px 0', 'padding': '0'},
+    'h1': {'padding': '0', 'font-family': 'inherit', 'font-weight': '700',
+           'line-height': 'normal', 'letter-spacing': 'normal'},
+    'h2': {'padding': '0', 'font-family': 'inherit', 'font-weight': '700',
+           'line-height': 'normal', 'letter-spacing': 'normal'},
+    'h3': {'padding': '0', 'font-family': 'inherit', 'font-weight': '700',
+           'line-height': 'normal', 'letter-spacing': 'normal'},
+    'ol': {'margin': '8px 0 10px', 'padding': '0 0 0 20px',
+           'list-style': 'decimal outside'},
+    'ul': {'margin': '8px 0 10px', 'padding': '0 0 0 20px',
+           'list-style': 'disc outside'},
+    'li': {'margin': '0', 'padding': '0', 'display': 'list-item'},
+    'a': {'font-family': 'inherit', 'line-height': 'inherit'},
+    'strong': {'font-weight': '700'},
+    'em': {'font-style': 'italic'},
+    'th': {'font-weight': '700', 'vertical-align': 'middle'},
+    'td': {'vertical-align': 'middle'},
+}
 
 
 class Element:
@@ -121,7 +143,7 @@ def export(source):
         # Repeated buttons and table cells share the same computed base styles.
         key = (tag, frozenset(classes))
         if key not in style_cache:
-            style = {}
+            style = CMS_DEFAULTS.get(tag, {}).copy()
             for _, selector, properties in rules:
                 if selector == tag or (selector.startswith('.') and selector[1:] in classes):
                     style.update(properties)

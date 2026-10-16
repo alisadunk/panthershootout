@@ -80,14 +80,14 @@ class SportsConnectExportTests(unittest.TestCase):
         self.assertIn('Game Schedule</span>', fragment)
 
     def test_image_uses_public_source_when_override_is_empty(self):
-        fragment, _ = export(self.configure('fieldMap', sportsConnectUrl=''))
+        fragment, _ = export(self.configure('tournamentEmblem', sportsConnectUrl=''))
         images = [attrs for tag, attrs in Tags(fragment).tags if tag == 'img']
-        self.assertTrue(any(attrs['src'].endswith('small.jpg') for attrs in images))
+        self.assertTrue(any(attrs['src'].endswith('pso_emblem_2026%20(2).png') for attrs in images))
 
     def test_invalid_image_destination_is_rejected(self):
         for value in ('https://', 'mailto:someone@example.org', 'images/map.jpg'):
             with self.subTest(value=value), self.assertRaises(ValueError):
-                export(self.configure('fieldMap', sportsConnectUrl=value))
+                export(self.configure('tournamentEmblem', sportsConnectUrl=value))
 
     def test_cached_styles_do_not_share_inline_overrides(self):
         source = self.source.replace('data-link="rules"',

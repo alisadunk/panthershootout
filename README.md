@@ -55,7 +55,7 @@ Coaches can submit the Team Registration form first to help tournament planning,
 
 The application and Rules permit a **regional check or Zelle** to `psopay@aysoregion42.org`, with an application payment description such as `PSO-14UG-94-Smith` (`PSO-Div-Region-CoachName`). Make checks payable to **AYSO Region 42 / Panther Shootout**. Mail checks to Panther Shootout Tournament, P.O. Box 709, Newbury Park, CA 91319-0709. Personal checks are not accepted.
 
-The first paragraph of registration step 2 begins with **Complete the Application** without a link: complete it, obtain the Regional Commissioner's (RC) signature and other required approvals, then upload the completed application using [**Document Upload**](https://forms.gle/xY1WDDPb99jjsJVUA). Uploading completed forms is the primary submission method. An italic ** note below the steps allows mailing completed forms to the address in step 3 if uploading does not work; that address also accepts regional checks. An italic * note explains that teams without referees forfeit their referee deposit. The website's upload links open in a new tab. The second paragraph of step 2 is a plain-text supporting-document reminder with no links or yellow emphasis. It allows the roster, guest-player forms, referee nomination, and applicable youth-referee forms to be uploaded separately before the end of registration on November 20. Download and upload links remain in the action buttons; there is no separate roster template configured. Coaches should submit their application without waiting for their roster. Check these submission deadlines against the PDFs; do not assume the documents are fully aligned.
+The first paragraph of registration step 2 begins with **Complete and Submit Application.** without a link: complete it, obtain the Regional Commissioner's (RC) signature and other required approvals, then upload the completed application using [**Document Upload**](https://forms.gle/xY1WDDPb99jjsJVUA). Uploading completed forms is the primary submission method. An italic ** note below the steps allows mailing completed forms to the address in step 3 if uploading does not work; that address also accepts regional checks. An italic * note explains that teams without referees forfeit their referee deposit. The website's upload links open in a new tab. The second paragraph of step 2 is a plain-text supporting-document reminder with no links or yellow emphasis. It allows the roster, guest-player forms, referee nomination, and applicable youth-referee forms to be uploaded separately before the end of registration on November 20. Download and upload links remain in the action buttons; there is no separate roster template configured. Coaches should submit their application without waiting for their roster. Check these submission deadlines against the PDFs; do not assume the documents are fully aligned.
 
 Roster changes need RC approval and must be finalized by initial tournament check-in; the Rules ask that changes reach the registrar before check-in. A player may appear on only one team. Each team has one Head Coach and one Assistant Coach, both registered volunteers with current certifications and age-appropriate coach certification.
 
@@ -70,7 +70,7 @@ The local PDFs in `docs/` now have native fillable fields for team details, cont
 | [Youth Referee Letter](docs/12%20Youth%20Referee%202026.pdf) | 31, including qualification checkboxes |
 | [Guest Player Approval](docs/8%20Guest%20Player%202026.pdf) | 50, including three guest-player rows |
 
-Open a PDF in a viewer that supports forms, enter the details, select the appropriate checkboxes, and save a completed copy. Print it and obtain the required ink signatures, then scan and upload the completed form. If uploading does not work, mail the completed forms to the address in registration step 3. Approval signature areas remain for signing by hand as required by the existing printed instructions. The supplied files are blank, and their original layouts, colors, logos, text, and page counts are preserved. The Game Card remains fillable; the Tournament Rules and Referee Plan remain reference documents.
+Open a PDF in a viewer that supports forms, enter the details, select the appropriate checkboxes, and save a completed copy. Print it and obtain the required ink signatures, then scan and upload the completed form. If uploading does not work, mail the completed forms to the address in registration step 3. Approval signature areas remain for signing by hand as required by the existing printed instructions. The supplied files are blank. Layouts, colors, logos, text, and page counts are preserved except for the Referee Nomination age-division row, which now has three matching, clearly outlined 10U/12U/14U checkboxes. The Game Card remains fillable; the Tournament Rules and Referee Plan remain reference documents.
 
 The website links use hosted public PDFs. Upload these updated local files to replace the hosted copies before visitors can use the new fields. If their public URLs change, update `LINKS` and regenerate the Sports Connect fragment. The public copies have not been replaced by this local update.
 
@@ -99,7 +99,7 @@ The [fillable game-card PDF](docs/28%20PSO%20Game%20Card.pdf) has 46 shared fiel
 
 Based on the Tournament Rules, with match lengths cross-checked against the Referee Plan:
 
-- **Check in 60 minutes before the first game.** Bring exactly five completed game cards printed on card stock using the tournament's fillable PDF template, matching the approved roster in jersey-number order. One card is used to track shootout participation.
+- **Check in 60 minutes before the first game.** Bring five completed game cards: four for matches and one for the Shootout, based on the intended four-game maximum. Print cards on card stock using the tournament's fillable PDF template, matching the approved roster in jersey-number order. Rules 10B's preliminary-game count still needs reconciliation with the six-team format in 10E.
 - Bring AYSO Player Registration forms with original ink or electronic signatures and keep them available throughout the event. Players need not attend coach check-in; late arrivals must be checked in by staff before playing.
 - **Every player must play at least half of each game.** Substitutions occur approximately midway through each half and are recorded by the referee.
 - Pool format and advancement depend on division size. The Rules describe four-, five-, six-, and eight-team formats; confirm the final bracket before scheduling.
@@ -112,7 +112,7 @@ Based on the Tournament Rules, with match lengths cross-checked against the Refe
 | 12U | 25-minute halves | 30-minute halves |
 | 14U | 25-minute halves | 35-minute halves |
 
-The five-team round-robin clause separately says “All games are 25 min”; confirm whether this means halves and which divisions it overrides.
+Rules 10F's ambiguous sentence “All games are 25 min to keep competition fair” was removed at the director's request. Five-team round-robin matches use the division-specific pool-play durations in Rules 14C: 24-minute halves for 10U and 25-minute halves for 12U/14U. The four-game round robin, no KFPM, and no-added-time provisions remain unchanged.
 
 ### Panther Shootout Competition
 
@@ -140,26 +140,32 @@ Youth referees need RRA authorization and must be **at least two years older tha
 
 ## Director Planning and Operations
 
-The following assignments and priorities come from the director's notes and should be reconfirmed for 2026.
+The 2026 Panther Shootout tournament has been approved. The website is updated and accepting registrations, with instructions and forms available at [panthershootout.aysoregion42.org](https://panthershootout.aysoregion42.org). Board members should review the website and send feedback on anything missing, unclear, or needing correction.
 
-| Responsibility | Listed lead(s) |
+The following responsibility assignments reflect the director's updates for 2026. Leads should review their assigned areas and flag preparation needs or gaps.
+
+| Responsibility | Lead(s) |
 | --- | --- |
-| Registration/check-in; medals, pins, merchandise | Alex Timen / Brenda Bordagaray |
-| Fields, permits, lining, setup/teardown, medic coordination | Peter Hamilton / Darryll Levi |
+| Registration and check-in | Alex Timen / Brenda Bordagaray |
+| Fields, permits, setup/teardown, parking, and volunteer coordination | Peter Hamilton / Darryl Levy |
 | Shootout competition | Jonathan “JJ” Geer |
-| Referees | Dave Becker / Leslie Cravitz |
+| Referees | Dave Becker / Leslie Cravitz / Peter Hamilton / Alex Timen |
 | Scorekeeping | Howard Cheng |
-| Scheduling | Alex Timen |
-| Snack shack and volunteers | Magali Williams / Brenda Bordagaray |
-| Treasury | Gary / Derek / Alex |
+| Scheduling | Peter Hamilton |
+| Snack shack, concession volunteers, and vendor coordination | Magali Williams / Brenda Bordagaray / Alex Timen |
+| Treasury | Derek / Alex Timen |
+| Medals, pins, and merchandise | Alex Timen |
+| Field painting, EMT, and portable toilets | Alex Timen |
 
 ### Priority Checklist
 
 Unchecked items are actions to complete or reconfirm, not a claim that prior-year work remains undone.
 
-- [ ] Confirm section tournament application approval; notes record paperwork emailed to Debby.
-- [ ] Confirm CRPD permits; notes recommend submitting with fall permits in March/April.
-- [ ] Update the public webpage, application instructions, and downloads for 2026; resolve the document conflicts below.
+- [x] Tournament approved for 2026, as confirmed by the director.
+- [ ] Confirm CRPD permits and any required insurance documentation; notes recommend submitting permits with fall permits in March/April.
+- [x] Website updated and accepting registrations with instructions and forms, as confirmed by the director.
+- [ ] Board members review the website and provide feedback.
+- [ ] Resolve the document conflicts listed below.
 - [ ] Inventory existing supplies, then finalize first-/second-place medals, referee coins, and player pins. Notes target medal delivery by the end of September.
 - [ ] Hold a planning meeting in early October and begin region outreach in mid-October using the Email Sheet in the PSO Team Status workbook. Notes say most registrations arrive in late October/early November.
 - [ ] Finalize the acceptance timeline and division structure. Avoid multiple teams sharing a head coach where possible because of scheduling and supervision difficulties.
@@ -167,12 +173,36 @@ Unchecked items are actions to complete or reconfirm, not a claim that prior-yea
 - [ ] Finalize team schedules, then configure CGI referee self-scheduling. Notes propose releasing access first to Area E, then Region 42, then other referees. Re-date the schedule; the notes' “Saturday ... Nov 20” does not match 2026.
 - [ ] Confirm parking/security staff, medical coverage, field lining, radios, and orange vests at Referee HQ for standby Field Monitors.
 - [ ] Reconfirm nine portable toilets, four sink stations, delivery locations, and dumpster capacity. Notes record JW Enterprises delivery November 26 and pickup December 1, and two existing dumpsters; verify the year and booking status.
-- [ ] Confirm food vendors, reserve their parking spaces, and arrange staff/referee food vouchers.
-- [ ] Consolidate invoices in one folder; track payments and referee-deposit refunds.
+- [ ] Confirm arrangements and contact details for Tacos 4 Life and Coffee, reserve their parking spaces, and arrange staff/referee food vouchers.
+- [ ] Finalize the budget, consolidate invoices in one folder, reconcile payments, and process referee-deposit refunds.
+- [ ] Track applications, required documents, payments, acceptance notices, and coach instructions; coordinate region outreach.
+- [ ] Finalize brackets, advancement rules, referee assignments, standby coverage, and assignment-credit tracking.
+- [ ] Confirm volunteer shifts, field monitors, backups, and staff briefing.
+- [ ] Inventory goals, nets, anchoring equipment, balls, tents, tables, chairs, signs, radios, chargers, vests, and printed supplies.
+- [ ] Confirm first-aid location, emergency vehicle access, incident reporting, and staff contact list.
+- [ ] Establish weather/cancellation decision authority, notification process, rain-date arrangements, and refund handling.
+- [ ] Plan game-card collection, standings verification, separate shootout scoring, and awards presentation staffing.
 
 ### Suppliers, Spending, and Inventory
 
-The notes list Kit for parking attendants; Chris Schmidt for field lining; Pins International for medals/coins/pins; Dustin Tubb for shirts; JW Enterprises for portable toilets; and BK Sports for merchandise. Food-vendor references include Kit, Peter Tshing, and Coaches Ice Cream. The medic provider remains unidentified in the notes. Supplier contacts and historical payment entries remain in the linked source notes.
+Food vendors for 2026 are Tacos 4 Life and Coffee, as provided by the director. Contact details are listed where available; other supplier references come from the director's notes and need reconfirmation for 2026.
+
+| Function | Vendor / name | Contact info |
+| --- | --- | --- |
+| Parking attendants | Kit | kitstoo@aol.com |
+| Field painting / lining | Chris Schmidt | schmidt_cc@hotmail.com |
+| Medical / EMT coverage | To be identified | Not listed |
+| Medals, coins, and pins | Pins International | Not listed |
+| Tournament shirts | Dustin Tubb | Not listed |
+| Merchandise and promotional items | BK Sports | Not listed |
+| Portable toilets and handwashing stations | JW Enterprises | khewitt@jwenterprises.com |
+| Food vendor | Tacos 4 Life | Not listed |
+| Coffee vendor | Coffee | Not listed |
+| Dumpster service | To be identified | Not listed |
+| Referee scheduling | CGI | Not listed |
+| Park permits | CRPD (permitting agency) | Not listed |
+
+The notes also list Pins International for prize/referee/coach shirts; confirm the supplier for those orders. Historical payment entries remain in the linked source notes.
 
 The notes require Tournament Director approval for new uncommon/discretionary expenses and approval for any expense **over $1,000**. They set a merchandise budget of **no more than $1,000**, recommend using existing stock, and call for no routine new Panther Shootout sock purchases.
 
@@ -180,9 +210,26 @@ Inventory includes 2023 volunteer shirts, 50th-anniversary shirts, 2025 hoodies/
 
 Items still described as **proposals or estimates** include a $350 CGI renewal, two or three food trucks paying $200/day plus $100 in food vouchers, and volunteer incentives such as covering another tournament's fees. The expense ledger includes older revenue, payments, and refunds in progress; it is not an approved 2026 budget or current balance.
 
+### Contact and Follow-up Log
+
+Alex reported the following outreach on October 14, 2026. No responses have been received as of that date. Follow-up dates below are suggested check-in dates, not deadlines agreed with recipients.
+
+| Date contacted | Contact / method | Request | Status | Suggested follow-up |
+| --- | --- | --- | --- | --- |
+| October 14, 2026 | Board members / email | Review duty assignments and website; report conflicts and volunteer availability for the pre-tournament restaurant planning meeting. | Awaiting response | October 16 |
+| October 14, 2026 | JW Enterprises / email: khewitt@jwenterprises.com | Quote and availability for 9 portable toilets and 2 handwashing stations; delivery Wednesday, November 25, pickup Monday, November 30. Confirm account credit and rainout cancellation policy. | Awaiting response; booking unconfirmed | October 16 |
+| October 14, 2026 | Chris Schmidt / email: schmidt_cc@hotmail.com | Field painting at Pepper Tree Playfields on Wednesday, November 25, using last year's sizes and markings; confirm availability, quote, and rain cancellation/rescheduling policy. | Awaiting response; booking unconfirmed | October 16 |
+| October 14, 2026 | Peter Hamilton, Magali Williams, and Brenda Bordagaray / email | Confirm they can reserve parking attendants through Kit (kitstoo@aol.com) for November 27–28 at Pepper Tree Playfields. | Awaiting response; Kit reservation unconfirmed | October 16 |
+| October 14, 2026 | EMT training contact (provider name not yet recorded) / text: (805) 306-8027 | Ask about EMT availability and rates for November 27–28 at Pepper Tree Playfields. | Awaiting response; coverage unconfirmed | October 16 |
+
+- [ ] October 16: follow up on unanswered requests and record replies, quotes, and confirmed arrangements here.
+- [ ] October 20: if requests remain unanswered, call vendors where a number is available, ask board leads for an update, and seek alternate providers for unconfirmed services.
+
+The current toilet rental request is for **2 handwashing stations**; the older notes mention 4. Use the current request when confirming the quote.
+
 ## PDF and Website Alignment
 
-The application, Guest Player Approval, Tournament Rules, Referee Plan, and Youth Referee Letter were edited while retaining their original page counts, logos, tables, and signature areas. The Referee Nomination needed no content changes.
+The application, Guest Player Approval, Tournament Rules, Referee Plan, and Youth Referee Letter were edited while retaining their original page counts, logos, tables, and signature areas. The Referee Nomination's age-division row was subsequently reformatted with three matching checkboxes; its other sections and 54 fillable fields are retained.
 
 - Corrected the application rain date and guest-player season to 2026; added the website's registration window to the application.
 - Standardized the referee deposit at $270 and the prorated refund at $30 per completed assignment, including qualifying standby assignments.
@@ -191,7 +238,21 @@ The application, Guest Player Approval, Tournament Rules, Referee Plan, and Yout
 - Replaced the Youth Referee Letter's unrelated tournament name and removed the Rules' obsolete overtime-substitution instruction in favor of the existing no-overtime rule.
 - Initially pointed all six form/rules download destinations to the PDFs in `docs/`. The current standalone page and Sports Connect fragment use configured public HTTPS URLs for those PDFs and the fillable game card.
 
-Existing template revision footers and the youth form's 16U competency fields were retained. The corrections above do not establish approval of the unresolved policies below.
+Existing template revision footers and the youth form's 16U competency fields were retained. A 2023 template footer does not mean the document has had no 2026 updates. The corrections above do not establish approval of the unresolved policies below.
+
+### Website Review Follow-up — October 16, 2026
+
+| Review item | Result / action |
+| --- | --- |
+| Game-card count | Website requires five completed cards: four for matches and one for the Shootout. Removed the incorrect six-card example, which combined three preliminary games with the six-team semifinal format. Rules 10B's preliminary-game count still needs reconciliation with 10E. |
+| Home/away field map | Director confirmed the existing map is fine and should remain unchanged. Original map image and link restored in both local website versions; no map replacement is needed. |
+| Referee Nomination division selection | Replaced the crowded grid with equal, clearly outlined checkboxes for 10U, 12U, and 14U, retaining fillable fields and the rest of the form. Upload the revised PDF to replace the hosted copy. |
+| 10U pool-play duration | Director confirmed retaining 24-minute halves. Website, Rules, and Referee Plan already agree; no duration change made. Final-round halves remain 25/30/35 minutes for 10U/12U/14U. |
+| Rules 10F, five-team format | Director requested removal of the ambiguous “All games are 25 min to keep competition fair” sentence. Removed from the local Rules PDF; division-specific pool-play durations in Rules 14C apply. Replace the hosted Rules PDF. |
+| Two registration links | Both serve required, different steps: team/contact registration and upload of the signed application/supporting forms. Director requested keeping the button area free of additional explanation; the existing registration instructions cover these steps. |
+| Live “Links and Downloads” menu | No separate menu with this title exists in the local HTML. Check the Sports Connect menu separately and clarify its registration labels. Keep the existing field-map link as directed. |
+
+Local updates require publishing the regenerated Sports Connect fragment and replacing the hosted Referee Nomination PDF. The live menu and public PDF copies were not changed here; the public Rules PDF could not be fetched to compare with the local copy.
 
 ## Remaining Decisions Before Publication
 
@@ -203,7 +264,7 @@ Existing template revision footers and the youth form's 16U competency fields we
 | Coaches as referees | Referee Plan prohibits coaches; notes allow assistant coaches. |
 | Local volunteer exception | Notes offer referee/deposit relief for setup/teardown help and mention a possible standings penalty; confirm terms against published referee and scoring rules. |
 | Youth paperwork | Letter allows a parent/guardian present instead of attaching the youth registration form; Referee Plan requires the application to be carried. Confirm the intended document requirement. |
-| Match format | Five-team format says “25 min” without specifying halves or which divisions it overrides. |
+| Preliminary-game count | Rules 10B's minimum of three preliminary games conflicts with the six-team format in 10E (two pools of three, then semifinals). Reconcile this wording with the intended four-game maximum. |
 | Refunds | General full-refund cancellation wording overlaps more specific weather/proration/preordered-item provisions. |
 | Webpage resources | The disabled schedule still references 2025; replace it with the 2026 schedule before enabling the link. The game-card link now points to the public fillable PDF. |
 | Operational dates | Notes mix prior-year bookings, completed tasks, inventory, and proposals; reconfirm dates, staffing, and supplier commitments. |
@@ -215,7 +276,7 @@ Existing template revision footers and the youth form's 16U competency fields we
 | [panther_shootout_main.html](panther_shootout_main.html) | Standalone page with a complete HTML document, CSS, JavaScript, and centrally configured links. Open directly in a browser or host alongside `docs/`. |
 | [panther_shootout_sportsconnect.html](panther_shootout_sportsconnect.html) | Copy-paste fragment for Sports Connect's HTML/source editor. Contains ordinary HTML and inline `style` attributes, with no `html`, `head`, `body`, `script`, `style`, or iframe elements. |
 
-The fragment needs no JavaScript, external stylesheet, or runtime dependencies. Styles stay on its own elements, the columns wrap on smaller screens, and forms open in a new tab. Disabled controls have no clickable URL. Team Status is visible in both versions and lists eight teams across six divisions: one paid team with application and referee forms submitted, one paid team awaiting document upload, and six Region 42 teams awaiting coach assignment. Division badges show **Open** without displaying an available-spot count. Update the division tables in the standalone source and regenerate the fragment when statuses change. The carousel remains removed from both versions.
+The fragment needs no JavaScript, external stylesheet, or runtime dependencies. Styles stay on its own elements, the columns wrap on smaller screens, and forms open in a new tab. Disabled controls have no clickable URL. Team Status is visible in both versions and lists eighteen teams across six divisions: one paid team with application and referee forms submitted, one paid team awaiting document upload, 12UG-21 and 14UG-795 with completed registration forms and awaiting application and payment, six Region 42 teams awaiting coach assignment, and eight Region 2 teams awaiting coach assignment (two each in 10UB and 10UG, and one in each other division). Division badges show **Open** without displaying an available-spot count. Use division and region only for Team Status identifiers; omit coach names. Update the division tables in the standalone source and regenerate the fragment when statuses change. The carousel remains removed from both versions.
 
 ### Change Links in One Place
 
@@ -237,7 +298,7 @@ After editing content, base CSS, or link configuration in the standalone page, r
 python tools/build_sportsconnect.py
 ```
 
-This uses Python 3's standard library and overwrites `panther_shootout_sportsconnect.html`. It copies visible content, resolves links to literal URLs, and inlines the page's simple tag/class CSS rules. Hover/focus rules and media queries are excluded; the base layout wraps without media queries. Edit the standalone source and regenerate instead of maintaining two copies manually.
+This uses Python 3's standard library and overwrites `panther_shootout_sportsconnect.html`. It copies visible content, resolves links to literal URLs, and inlines the page's simple tag/class CSS rules. The fragment explicitly sets paragraph and heading padding, heading typography, and list defaults to prevent the Sports Connect Atlas theme from adding extra spacing or changing fonts. Source styles and element-level overrides take precedence over these defaults. Hover/focus rules and media queries are excluded; the base layout wraps without media queries. Edit the standalone source and regenerate instead of maintaining two copies manually.
 
 Python is needed only to regenerate the fragment, not to use either HTML version. In this workspace, if `python` is unavailable, the portable runtime previously downloaded for PDF editing can run the exporter:
 

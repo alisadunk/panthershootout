@@ -99,8 +99,8 @@ def referee_nomination(document):
         ('contact_evening_phone', 'Referee team contact evening phone', (399, 289, 579, 306)),
     ):
         form.field(name, label, bounds)
-    for age, x in ((10, 119), (12, 169), (14, 221)):
-        form.check(f'division_{age}u', f'Age division {age}U', (x, 217, x+9, 226))
+    for age, x in ((10, 120), (12, 179), (14, 238)):
+        form.check(f'division_{age}u', f'Age division {age}U', (x, 217.4, x+10.1, 227.5))
     columns = (
         ('name', 'Name', 46, 180, 9),
         ('badge', 'Badge level (R, I, A, N)', 185, 217, 9),

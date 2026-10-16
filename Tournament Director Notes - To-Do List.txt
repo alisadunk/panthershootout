@@ -1,33 +1,52 @@
 ﻿DAY OF THE TOURNAMENT
 
 
+2026 Status:
+Tournament approved. Website updated and accepting registrations with instructions and forms:
+https://panthershootout.aysoregion42.org
+Board members: review the website and send feedback on anything missing, unclear, or needing correction.
+
+Rules update - October 16, 2026:
+Website game-card instructions corrected to five completed cards: four for matches and one for the Shootout. Removed the incorrect six-card example. Reconcile Rules 10B's minimum of three preliminary games with the six-team format in 10E, which has two pool games followed by a semifinal and final/consolation for advancing teams.
+Removed "All games are 25 min to keep competition fair" from Rules 10F at the director's request. Five-team round-robin games use Rules 14C pool-play durations: 10U has 24-minute halves; 12U/14U have 25-minute halves. Four games per team, no KFPM, and no added time remain unchanged. Replace the hosted Rules PDF with the updated local file.
+
 PSO Management Committee:
-Team Registration/Check In - Alex Timen / Brenda Bordagaray
-Field Coordinator- Peter Hamilton / Darryll Levi (permits, painting, set up/tear down, medic …)
-Shootout Coordinator - Jonathan JJ Geer 
-Tournament Medals/Pins/Merchandise - Alex Timen/Brenda Bordagaray
-Referee Coordinator - Dave Becker / Leslie Cravitz
-Scorekeeper - Howard Cheng
-Scheduler - Alex Timen 
-Snack Shack Coordinator - Magali Williams /Brenda Bordagaray
-Treasurer - Gary / Derek / Alex
-Volunteer Coordinator -  Magali Williams/Brenda Bordagaray 
+Registration and check-in - Alex Timen / Brenda Bordagaray
+Fields, permits, setup/teardown, parking, and volunteer coordination - Peter Hamilton / Darryl Levy
+Shootout competition - Jonathan "JJ" Geer
+Referees - Dave Becker / Leslie Cravitz / Peter Hamilton / Alex Timen
+Scorekeeping - Howard Cheng
+Scheduling - Peter Hamilton
+Snack shack, concession volunteers, and vendor coordination - Magali Williams / Brenda Bordagaray / Alex Timen
+Treasury - Derek Hutchison/ Alex Timen
+Medals, pins, and merchandise - Alex Timen
+Field painting, EMT, and portable toilets - Alex Timen
+
+Leads should review their assigned areas and flag preparation needs or gaps.
 
 
-Vendors:
-Parking Attendants - Kit kitstoo@aol.com 
-Field Painting - Chris Schmidt (better lines and size) schmidt_cc@hotmail.com  
-Medic - ?
-Medal/Coins/Pins - Pins International
-Shifts for prize/referee/coaches - Pins International
-Food Vendor: Kit, or identify other trucks - working with others, have coffee people and tacos, cousin's main lobster refused, need to contact Tres Maria and have them booked for the day
-Porta Putties - JW Enterprises (ordered 9 ) khewitt@jwenterprises.com
+Vendors (function - name - contact info):
+Food vendors for 2026 are Tacos 4 Life and Coffee. Reconfirm other suppliers and bookings for 2026.
+Parking attendants - Kit - kitstoo@aol.com
+Field painting / lining - Chris Schmidt - schmidt_cc@hotmail.com
+Medical / EMT coverage - To be identified - not listed
+Medals, coins, and pins - Pins International - not listed
+Tournament shirts - Dustin Tubb - not listed
+Merchandise and promotional items - BK Sports - not listed
+Portable toilets and handwashing stations - JW Enterprises - khewitt@jwenterprises.com
+Food vendor - Tacos 4 Life - not listed
+Coffee vendor - Coffee - not listed
+Dumpster service - To be identified - not listed
+Referee scheduling - CGI - not listed
+Park permits - CRPD (permitting agency) - not listed
+
+Earlier notes also list Pins International for prize/referee/coach shirts; confirm the supplier for those orders.
 
 
 Expenses: Any new uncommon/discretionary expense needs to be approved by TD. Any expense over $1000 needs to be approved.
 * Merchandise budges not more then $1000 , we have enough right now to sell next year
 * No more socks for Panther Shootout, teams can use regular season socks - don’t see any practical need for this expense. We can tell coaches if somebody needs socks we can provide them.
-* Concession operation needs more review, More vendors - to remove lines we do not benefit from. Kit may come back next year, another option. Or doing our own concessions. Perfect scenario would be : charge vendors  (food trucks) a flat fee per day $200 + $100 in food vouchers, invite 2-3 trucks, feed staff and referees and sell hot dogs, drinks , etc. Referees get a food voucher
+* Food vendors for 2026: Tacos 4 Life and Coffee. Confirm vendor arrangements and staff/referee food vouchers. Prior proposal: charge food trucks $200 per day plus $100 in food vouchers; terms are not confirmed.
 * Establish Tournament Planning meeting in early October to go over the details instead of Friday night meeting. 
 
 
@@ -49,7 +68,7 @@ See invoices
 
 
 
-Expense
+Historical expenses (prior-year food vendors below are not the 2026 vendor list)
 	Provider
 	Revenue/Expenses
 	Status
@@ -127,9 +146,9 @@ Expense
 
 
 TO DO LIST
-* Complete tournament application paperwork for section - emailed to Debby
-* Update region website with updated application information
-* Submit CRPD permit application (with Fall permits in March/April)
+Completed: tournament approval and website update; registration is open.
+* Board members review the website and provide feedback.
+* Confirm CRPD permits and any required insurance documentation.
 * Design & order medals  1 and 2nd place only - should be here by the end of september
 * Design & order referee coins
 * Design & order player pins 
@@ -140,11 +159,20 @@ TO DO LIST
 * List of volunteers for morning set up and tear down (2 per PSO team from NP)
 * List of Board members present throughout the day
 * List of Volunteers from high school and others
-* Schedule security and medical personnel (Kit and Derryl)
-* Order Port-A-Potties (9) , Sink Stations (4) ,called JW Enterprises - sched for 11.26, pick up 12.01, meed to email picture where to put them or be there on 11/26 , they will call.
-* Contract Food Vendor - Peter Tshing and Coaches Ice Cream are scheduled - block off parking lot spot for them
-* Order Additional Dumpster - already have 2 dumpsters
-* Schedule Field Lining -  decided on Chris (Darryll is in contact with him)
+* Peter Hamilton / Darryl Levy: confirm parking and security staffing. Alex Timen: confirm EMT provider and coverage.
+* Alex Timen: reconfirm nine portable toilets and four handwashing stations with JW Enterprises, including placement, delivery, and pickup. Earlier notes record November 26 delivery and December 1 pickup; verify year and booking status.
+* Confirm arrangements with Tacos 4 Life and Coffee, collect contact info, and reserve vendor parking spaces.
+* Confirm dumpster capacity, trash supplies, and cleanup coverage; earlier notes record two existing dumpsters.
+* Alex Timen: confirm field painting with Chris Schmidt and coordinate access with Peter Hamilton / Darryl Levy.
+* Track applications, required documents, payments, acceptance notices, and coach instructions; coordinate region outreach.
+* Finalize division sizes, brackets, advancement rules, and team schedules; resolve document conflicts listed in the README.
+* Finalize referee assignments, standby coverage, check-in, and assignment-credit tracking.
+* Confirm volunteer shifts, field monitors, setup/teardown crews, board coverage, backups, and staff briefing.
+* Inventory goals, nets, anchoring equipment, balls, tents, tables, chairs, signs, radios, chargers, vests, and printed supplies.
+* Confirm first-aid location, emergency vehicle access, incident reporting, and staff contact list.
+* Establish weather/cancellation decision authority, notification process, rain-date arrangements, and refund handling.
+* Plan game-card collection, standings verification, separate shootout scoring, and awards presentation staffing.
+* Finalize the budget, consolidate invoices, reconcile payments, and process referee-deposit refunds.
 
 
 
