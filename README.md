@@ -146,7 +146,7 @@ The following responsibility assignments reflect the director's updates for 2026
 
 | Responsibility | Lead(s) |
 | --- | --- |
-| Registration and check-in | Alex Timen / Brenda Bordagaray |
+| Registration and check-in | Alex Timen / Brenda Bordagaray / Nicole Steward |
 | Fields, permits, setup/teardown, parking, and volunteer coordination | Peter Hamilton / Darryl Levy |
 | Shootout competition | Jonathan “JJ” Geer |
 | Referees | Dave Becker / Leslie Cravitz / Peter Hamilton / Alex Timen |
@@ -156,6 +156,8 @@ The following responsibility assignments reflect the director's updates for 2026
 | Treasury | Derek / Alex Timen |
 | Medals, pins, and merchandise | Alex Timen |
 | Field painting, EMT, and portable toilets | Alex Timen |
+
+Nicole Steward is available to help with tournament registration and the snack shack; shifts to be arranged.
 
 ### Priority Checklist
 
@@ -276,7 +278,7 @@ Local updates require publishing the regenerated Sports Connect fragment and rep
 | [panther_shootout_main.html](panther_shootout_main.html) | Standalone page with a complete HTML document, CSS, JavaScript, and centrally configured links. Open directly in a browser or host alongside `docs/`. |
 | [panther_shootout_sportsconnect.html](panther_shootout_sportsconnect.html) | Copy-paste fragment for Sports Connect's HTML/source editor. Contains ordinary HTML and inline `style` attributes, with no `html`, `head`, `body`, `script`, `style`, or iframe elements. |
 
-The fragment needs no JavaScript, external stylesheet, or runtime dependencies. Styles stay on its own elements, the columns wrap on smaller screens, and forms open in a new tab. Disabled controls have no clickable URL. Team Status is visible in both versions and lists eighteen teams across six divisions: one paid team with application and referee forms submitted, one paid team awaiting document upload, 12UG-21 and 14UG-795 with completed registration forms and awaiting application and payment, six Region 42 teams awaiting coach assignment, and eight Region 2 teams awaiting coach assignment (two each in 10UB and 10UG, and one in each other division). Division badges show **Open** without displaying an available-spot count. Use division and region only for Team Status identifiers; omit coach names. Update the division tables in the standalone source and regenerate the fragment when statuses change. The carousel remains removed from both versions.
+The fragment needs no JavaScript, external stylesheet, or runtime dependencies. Styles stay on its own elements, the columns wrap on smaller screens, and forms open in a new tab. Disabled controls have no clickable URL. Team Status is visible in both versions and lists 31 unique teams as of October 30, 2026 (3 paid, 19 awaiting application and payment, and 9 awaiting coach assignment). Team identifiers use division, region, and the first three letters of the coach name (or TBD). The two former 10UG-2-TBD entries are now Miryala and Argueta. Salmon (14UB-9-Sal) appears once; Salisian (14UG-2-Sal) is a separate team. Division badges show **Open** without a spot count. Payment is required for acceptance, and acceptance status is assigned separately later; listing a team or recording payment does not indicate acceptance. Three teams have payment received: 10UB-638-Pik has application and referee forms submitted, 12UG-638-Car awaits document upload, and 12UG-21-Mia has its application received. Update the division tables in the standalone source and regenerate the fragment when statuses change. The carousel remains removed from both versions.
 
 ### Change Links in One Place
 

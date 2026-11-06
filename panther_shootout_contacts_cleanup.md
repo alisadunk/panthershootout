@@ -1,7 +1,7 @@
 # Invitation contact cleanup
 
 - Input address occurrences: 201
-- Unique addresses retained: 174
+- Unique addresses retained: 169
 - Duplicate occurrences removed: 27
 - Invalid addresses excluded after formatting cleanup: 0
 - Addresses normalized to lowercase; duplicates compared without case.
@@ -40,3 +40,11 @@ matthew\.j.frary@gmail.com → matthew.j.frary@gmail.com (removed Markdown escap
 | frank795rc@gmail.com | 3 |
 | rc@ayso254.org | 2 |
 | morgan174rc@gmail.com | 2 |
+
+## Manual removals
+
+- October 17, 2026: Removed clubbednar@aol.com at the director?s request.
+- October 17, 2026: Removed jamesyucla@gmail.com at the director?s request.
+- October 17, 2026: Removed marci.hise@aysoregion42.org at the director?s request.
+- October 17, 2026: Removed tommy.lobianco@aysoregion42.org at the director?s request.
+- October 17, 2026: Removed ybaysorc82sp@gmail.com at the director?s request.
