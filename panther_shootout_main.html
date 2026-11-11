@@ -16,6 +16,11 @@ const LINKS = {
     "url": "https://www.aysoregion42.org/portals/14695/docs/panthershootout/pso_emblem_2026%20(2).png",
     "enabled": true
   },
+  "snackShackMenu": {
+    "url": "images/snack_shack_menu.jpg",
+    "enabled": true,
+    "sportsConnectUrl": "https://dt5602vnjxv0c.cloudfront.net/portals/14695/docs/panthershootout/snack_shack_menu.jpg"
+  },
   "map": {
     "url": "https://maps.google.com/?q=3720+Old+Conejo+Rd,+Thousand+Oaks,+CA+91320",
     "enabled": true
@@ -84,8 +89,8 @@ const LINKS = {
     "enabled": false
   },
   "volunteerSignup": {
-    "url": "https://www.signupgenius.com/go/10C0548AAA828A3F5C07-60723881-psovolunteer#/",
-    "enabled": false
+    "url": "https://www.signupgenius.com/go/10C0548AAA828A3F5C07-64693022-parent#/",
+    "enabled": true
   }
 };
 // END LINK CONFIG
@@ -195,6 +200,46 @@ a:hover{
 .info-section{
   margin-top:24px;
 }
+.vendor-carousel{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  max-width:100%;
+  padding:4px 4px 14px;
+  box-sizing:border-box;
+  scroll-snap-type:x mandatory;
+}
+.vendor-card{
+  flex:0 0 85%;
+  max-width:320px;
+  min-width:0;
+  margin:0;
+  box-sizing:border-box;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  background:#fff;
+  scroll-snap-align:start;
+}
+.vendor-image-link{
+  display:block;
+  padding:12px;
+  border-radius:12px;
+}
+.vendor-image{
+  display:block;
+  width:100%;
+  height:320px;
+  object-fit:contain;
+  background:#fff;
+}
+.vendor-caption{
+  padding:12px 16px;
+  border-top:3px solid #ffbf24;
+  color:#111;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.5;
+}
 .mailing-address{
   margin:8px 0 0;
   padding:12px 16px;
@@ -265,6 +310,7 @@ details{
 }
 summary{
   display:flex;
+  flex-wrap:wrap;
   align-items:center;
   gap:10px;
   list-style:none;
@@ -328,8 +374,7 @@ summary::-webkit-details-marker{
       </p>
 
       <p>
-        We look forward to hosting several food and beverage vendors offering
-        gourmet coffee, tacos, burgers, hot dogs, fruit cups, funnel cake, and more.
+        We look forward to hosting food and beverage vendors throughout the tournament.
       </p>
 
       <p>
@@ -478,92 +523,110 @@ summary::-webkit-details-marker{
     <div class="info-box info-text">
       <p>
         Follow your team's road to the Shootout.
-        View current team application and acceptance status by division.
+        View current team application, payment, and acceptance status by division.
+        Registered counts include held entries and teams awaiting coach assignment, and exclude withdrawn teams.
+        Registration and payment do not indicate tournament acceptance.
+      </p>
+      <p>
+        Each division has eight spots. Open spots equal eight minus accepted teams.
+        Accepted counts include teams with payment pending, in the mail, or partially received.
+      </p>
+      <p>
+        <strong>First round of acceptance decisions planned for November 14.</strong>
+        Please submit your application and send in your payment before then so your team can be considered.
       </p>
       <p>
         Ready to get started? <a class="text-link" data-link="teamRegistration" rel="noopener" target="_blank">Register Your Team</a>.
       </p>
       <details>
-        <summary><strong>10UB</strong><span class="badge">Open</span></summary>
+        <summary><strong>10UB</strong><span class="badge">Registered - 7 | Accepted - 6 | Open - 2</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>10UB-638-Pik</td><td>Payment received; application and referee forms submitted</td></tr>
-            <tr><td>10UB-33-Cor</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>10UB-2-Gar</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>10UB-2-Von</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>10UB-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
-            <tr><td>10UB-20-TBD</td><td>Awaiting Coach Assignment</td></tr>
+            <tr><td>10UB-2-Garcia</td><td>Accepted</td></tr>
+            <tr><td>10UB-2-Von</td><td>Accepted</td></tr>
+            <tr><td>10UB-33-Corri</td><td>Accepted</td></tr>
+            <tr><td>10UB-42-Cull</td><td>Accepted; payment pending</td></tr>
+            <tr><td>10UB-42-Cassaro</td><td>Accepted; payment pending</td></tr>
+            <tr><td>10UB-638-Pikkel</td><td>Accepted</td></tr>
+            <tr><td>10UB-20-Kalisher</td><td>Pending Application and Payment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>10UG</strong><span class="badge">Open</span></summary>
+        <summary><strong>10UG</strong><span class="badge">Registered - 5 | Accepted - 4 | Open - 4</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>10UG-20-Tor</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>10UG-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
-            <tr><td>10UG-2-Mir</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>10UG-2-Arg</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
+            <tr><td>10UG-2-Miryala</td><td>Accepted; payment in the mail</td></tr>
+            <tr><td>10UG-2-Argueta</td><td>Accepted; payment in the mail</td></tr>
+            <tr><td>10UG-33-Gonzalez</td><td>Accepted; payment in the mail</td></tr>
+            <tr><td>10UG-42-Agel</td><td>Accepted</td></tr>
+            <tr><td>10UG-20-Torkamani</td><td>Pending Application and Payment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>12UB</strong><span class="badge">Open</span></summary>
+        <summary><strong>12UB</strong><span class="badge">Registered - 8 | Accepted - 4 | Open - 4</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>12UB-33-Pas</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>12UB-33-Moy</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>12UB-42-Kel</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>12UB-147-Fer</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>12UB-39-deG</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>12UB-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
-            <tr><td>12UB-2-Sou</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>12UB-20-TBD</td><td>Awaiting Coach Assignment</td></tr>
+            <tr><td>12UB-2-Sousa</td><td>Accepted; payment in the mail</td></tr>
+            <tr><td>12UB-2-TBD</td><td>HOLD</td></tr>
+            <tr><td>12UB-33-Paskoff</td><td>Accepted</td></tr>
+            <tr><td>12UB-33-Moyotl</td><td>Accepted; payment in the mail</td></tr>
+            <tr><td>12UB-42-Keene</td><td>Accepted; payment pending</td></tr>
+            <tr><td>12UB-147-Ferro</td><td>Pending Application and Payment</td></tr>
+            <tr><td>12UB-20-Utsinger</td><td>Pending Application and Payment</td></tr>
+            <tr><td>12UB-39-deGuzman</td><td>Pending Application and Payment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>12UG</strong><span class="badge">Open</span></summary>
+        <summary><strong>12UG</strong><span class="badge">Registered - 8 | Accepted - 4 | Open - 4</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>12UG-638-Car</td><td>Payment received; awaiting document upload</td></tr>
-            <tr><td>12UG-21-Mia</td><td>Payment received; application received</td></tr>
-            <tr><td>12UG-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
-            <tr><td>12UG-2-Ste</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>12UG-20-TBD</td><td>Awaiting Coach Assignment</td></tr>
+            <tr><td>12UG-2-Steiner</td><td>Accepted; payment in the mail</td></tr>
+            <tr><td>12UG-254-Kahikina</td><td>Pending Application and Payment</td></tr>
+            <tr><td>12UG-136-Castillo</td><td>Pending Payment</td></tr>
+            <tr><td>12UG-21-Mialaret</td><td>Accepted</td></tr>
+            <tr><td>12UG-42-Alamillo</td><td>Need online registration</td></tr>
+            <tr><td>12UG-42-O'Neill</td><td>Accepted; partial payment</td></tr>
+            <tr><td>12UG-638-Carper</td><td>Accepted</td></tr>
+            <tr><td>12UG-20-Trombetta</td><td>Pending Application and Payment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>14UB</strong><span class="badge">Open</span></summary>
+        <summary><strong>14UB</strong><span class="badge">Registered - 4 | Accepted - 2 | Open - 6</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>14UB-9-Sal</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>14UB-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
-            <tr><td>14UB-2-Kim</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
+            <tr><td>14UB-2-Kim</td><td>Accepted; payment in the mail</td></tr>
+            <tr><td>14UB-42-Carter</td><td>Accepted</td></tr>
+            <tr><td>14UB-20-TBD</td><td>Pending Application and Payment</td></tr>
+            <tr><td>14UB-9-Salmon</td><td>Pending Application and Payment</td></tr>
           </tbody>
         </table>
       </details>
 
       <details>
-        <summary><strong>14UG</strong><span class="badge">Open</span></summary>
+        <summary><strong>14UG</strong><span class="badge">Registered - 6 | Accepted - 3 | Open - 5</span></summary>
         <table>
           <thead><tr><th>Team Name</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>14UG-795-Muc</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>14UG-88-Gam</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>14UG-2-Sal</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>14UG-363-Bar</td><td>Completed Registration Form, Awaiting Application and Payment</td></tr>
-            <tr><td>14UG-42-TBD</td><td>Awaiting Coach Assignment</td></tr>
+            <tr><td>14UG-2-Salisian</td><td>Accepted; payment in the mail</td></tr>
+            <tr><td>14UG-795-Muckenthal</td><td>Pending Payment</td></tr>
+            <tr><td>14UG-88-Nakamura</td><td>Pending Application and Payment</td></tr>
+            <tr><td>14UG-363-Barnes</td><td>Withdrawn</td></tr>
+            <tr><td>14UG-42-Curtis</td><td>Accepted; payment pending</td></tr>
+            <tr><td>14UG-42-Stevens</td><td>Accepted; payment pending</td></tr>
+            <tr><td>14UG-20-Assefa</td><td>Pending Payment</td></tr>
           </tbody>
         </table>
       </details>
@@ -614,7 +677,7 @@ summary::-webkit-details-marker{
       <a class="btn btn-muted"
          data-link="schedule"
          rel="noopener"
-         target="_blank">Game Schedule</a>
+         target="_blank">Game Schedule — Available November 21</a>
 
       <a class="btn btn-ghost"
          data-link="documentUpload"
@@ -734,23 +797,33 @@ summary::-webkit-details-marker{
         </li>
 
         <li style="margin-top:8px;">
+          <strong>Snack Shack:</strong>
           Other volunteer opportunities include
-          merchandise sales and assisting with the Shootout Competition.
+          merchandise sales and helping at the snack shack.
         </li>
 
         <li style="margin-top:8px;">
-          <strong>Important Notice:</strong>
-          Newbury Park teams are strongly encouraged to provide parent volunteers in field setup,
-          field monitoring, and tear-down. Region 42 PSO teams that cannot provide coverage in these
-          categories may receive a <strong>one-point deduction</strong> in pool standings to support
-          fairness and shared participation.
+          <strong>Newbury Park Team Requirement:</strong>
+          Each Newbury Park team must provide a minimum of four parent volunteers
+          to help with field setup, field monitoring, the snack shack, or tear-down.
+          Teams that provide fewer than four volunteers will receive a
+          one-point deduction in pool standings.
+        </li>
+
+        <li style="margin-top:8px;">
+          <strong>Volunteer Recognition:</strong>
+          The Newbury Park team with the strongest volunteer turnout and contributions
+          will receive a full Region 42 referee crew (three referees) for the
+          All-Star tournaments of its choice. One team will be selected;
+          a second team may also receive a referee crew if both teams provide
+          exceptional volunteer support.
         </li>
       </ul>
     </div>
 
     <div class="info-box info-actions">
-      <a class="btn btn-muted"
-         data-link="volunteerRegistration"
+      <a class="btn btn-ghost"
+         data-link="volunteerSignup"
          rel="noopener"
          target="_blank">Volunteer Registration</a>
 
@@ -759,6 +832,64 @@ summary::-webkit-details-marker{
   </div>
 </div>
 
+
+<!-- ========== VENDORS ========== -->
+<div class="info-section" id="vendors">
+  <h2>Vendors</h2>
+  <p style="margin:0 0 12px;">Here's the tasty lineup we're cooking up for tournament weekend!
+    Think of it as a sneak peek, not a promised menu&mdash;vendors and offerings may change based on availability and tournament needs.</p>
+  <div class="vendor-carousel" role="region" aria-roledescription="carousel"
+       aria-label="Food and beverage vendors" tabindex="0">
+    <figure class="vendor-card" role="group" aria-label="1 of 8: Snack Shack">
+      <a class="vendor-image-link" data-link="snackShackMenu" href="images/snack_shack_menu.jpg" target="_blank" rel="noopener">
+        <img class="vendor-image" data-image="snackShackMenu" src="images/snack_shack_menu.jpg" alt="Panther Shootout Snack Shack menu with drinks, breakfast items, snacks, and lunch items (opens full size in a new tab)" loading="lazy" decoding="async">
+      </a>
+      <figcaption class="vendor-caption">Snack Shack</figcaption>
+    </figure>
+    <figure class="vendor-card" role="group" aria-label="2 of 8: Coffee">
+      <a class="vendor-image-link" href="https://www.aysoregion42.org/portals/14695/docs/panthershootout/huddle%20coffee.jpeg" target="_blank" rel="noopener">
+        <img class="vendor-image" src="https://www.aysoregion42.org/portals/14695/docs/panthershootout/huddle%20coffee.jpeg" alt="Huddle Coffee vendor flyer (opens full size in a new tab)" loading="lazy" decoding="async">
+      </a>
+      <figcaption class="vendor-caption">Coffee</figcaption>
+    </figure>
+    <figure class="vendor-card" role="group" aria-label="3 of 8: Churros">
+      <a class="vendor-image-link" href="https://www.aysoregion42.org/portals/14695/docs/panthershootout/churros.png" target="_blank" rel="noopener">
+        <img class="vendor-image" src="https://www.aysoregion42.org/portals/14695/docs/panthershootout/churros.png" alt="Churros vendor flyer (opens full size in a new tab)" loading="lazy" decoding="async">
+      </a>
+      <figcaption class="vendor-caption">Churros</figcaption>
+    </figure>
+    <figure class="vendor-card" role="group" aria-label="4 of 8: Pizza">
+      <a class="vendor-image-link" href="https://www.aysoregion42.org/portals/14695/docs/panthershootout/pizza.jpeg" target="_blank" rel="noopener">
+        <img class="vendor-image" src="https://www.aysoregion42.org/portals/14695/docs/panthershootout/pizza.jpeg" alt="Pizza vendor flyer (opens full size in a new tab)" loading="lazy" decoding="async">
+      </a>
+      <figcaption class="vendor-caption">Pizza</figcaption>
+    </figure>
+    <figure class="vendor-card" role="group" aria-label="5 of 8: Tacos">
+      <a class="vendor-image-link" href="https://www.aysoregion42.org/portals/14695/docs/panthershootout/taco4_4.png" target="_blank" rel="noopener">
+        <img class="vendor-image" src="https://www.aysoregion42.org/portals/14695/docs/panthershootout/taco4_4.png" alt="Tacos vendor flyer (opens full size in a new tab)" loading="lazy" decoding="async">
+      </a>
+      <figcaption class="vendor-caption">Tacos</figcaption>
+    </figure>
+    <figure class="vendor-card" role="group" aria-label="6 of 8: Tacos">
+      <a class="vendor-image-link" href="https://www.aysoregion42.org/portals/14695/docs/panthershootout/taco4_1.png" target="_blank" rel="noopener">
+        <img class="vendor-image" src="https://www.aysoregion42.org/portals/14695/docs/panthershootout/taco4_1.png" alt="Tacos vendor flyer (opens full size in a new tab)" loading="lazy" decoding="async">
+      </a>
+      <figcaption class="vendor-caption">Tacos</figcaption>
+    </figure>
+    <figure class="vendor-card" role="group" aria-label="7 of 8: Tacos">
+      <a class="vendor-image-link" href="https://www.aysoregion42.org/portals/14695/docs/panthershootout/taco4_2.png" target="_blank" rel="noopener">
+        <img class="vendor-image" src="https://www.aysoregion42.org/portals/14695/docs/panthershootout/taco4_2.png" alt="Tacos vendor flyer (opens full size in a new tab)" loading="lazy" decoding="async">
+      </a>
+      <figcaption class="vendor-caption">Tacos</figcaption>
+    </figure>
+    <figure class="vendor-card" role="group" aria-label="8 of 8: Tacos">
+      <a class="vendor-image-link" href="https://www.aysoregion42.org/portals/14695/docs/panthershootout/taco4_3.png" target="_blank" rel="noopener">
+        <img class="vendor-image" src="https://www.aysoregion42.org/portals/14695/docs/panthershootout/taco4_3.png" alt="Tacos vendor flyer (opens full size in a new tab)" loading="lazy" decoding="async">
+      </a>
+      <figcaption class="vendor-caption">Tacos</figcaption>
+    </figure>
+  </div>
+</div>
 
 </section>
 </main>

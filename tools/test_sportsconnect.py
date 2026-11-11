@@ -77,7 +77,7 @@ class SportsConnectExportTests(unittest.TestCase):
     def test_disabled_local_link_does_not_require_public_url(self):
         fragment, pending = export(self.configure('schedule', url='docs/schedule.pdf', enabled=False))
         self.assertNotIn('schedule', pending)
-        self.assertIn('Game Schedule</span>', fragment)
+        self.assertIn('Game Schedule — Available November 21</span>', fragment)
 
     def test_image_uses_public_source_when_override_is_empty(self):
         fragment, _ = export(self.configure('tournamentEmblem', sportsConnectUrl=''))
